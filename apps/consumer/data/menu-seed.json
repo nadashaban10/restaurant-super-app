@@ -1,0 +1,4015 @@
+{
+  "restaurantId": "kababgy-shaaban",
+  "currency": "EGP",
+  "money": "Amounts in the API are integers in piastres (1 EGP = 100).",
+  "defaultVariantRule": "Prefer 1/4 kg (or 1/4 chicken) when it exists — the usual neighborhood order. Otherwise the only variant, otherwise the cheapest.",
+  "homeAndCatalog": "Cards show ONLY the default variant name + priced default. Detail screen lists every variant. Cart lines are productId + variantId.",
+  "categories": [
+    {
+      "id": "cat_grills",
+      "slug": "grills",
+      "name": {
+        "ar": "المشويات",
+        "en": "Grills"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 0
+    },
+    {
+      "id": "cat_grill",
+      "slug": "grill",
+      "name": {
+        "ar": "الجريل",
+        "en": "Grill"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 1
+    },
+    {
+      "id": "cat_family-platters",
+      "slug": "family-platters",
+      "name": {
+        "ar": "الصواني",
+        "en": "Family platters"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 2
+    },
+    {
+      "id": "cat_lamb-shank",
+      "slug": "lamb-shank",
+      "name": {
+        "ar": "الموزة",
+        "en": "Lamb shank"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 3
+    },
+    {
+      "id": "cat_sambousak",
+      "slug": "sambousak",
+      "name": {
+        "ar": "السمبوسك",
+        "en": "Sambousak"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 4
+    },
+    {
+      "id": "cat_hawawshi",
+      "slug": "hawawshi",
+      "name": {
+        "ar": "الحواوشي",
+        "en": "Hawawshi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 5
+    },
+    {
+      "id": "cat_sandwiches",
+      "slug": "sandwiches",
+      "name": {
+        "ar": "السندوتشات",
+        "en": "Sandwiches"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 6
+    },
+    {
+      "id": "cat_kitchen-sides",
+      "slug": "kitchen-sides",
+      "name": {
+        "ar": "المطبخ",
+        "en": "Kitchen sides"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 7
+    },
+    {
+      "id": "cat_pasta",
+      "slug": "pasta",
+      "name": {
+        "ar": "المكرونات",
+        "en": "Pasta"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 8
+    },
+    {
+      "id": "cat_tagens",
+      "slug": "tagens",
+      "name": {
+        "ar": "الطواجن",
+        "en": "Tagens"
+      },
+      "description": {
+        "ar": "جميع الطواجن باللحمة البلدى. وزن اللحمة في الطاجن 1/4 ك.",
+        "en": "All meat tagines use 1/4 kg of baladi meat."
+      },
+      "sortOrder": 9
+    },
+    {
+      "id": "cat_mombar",
+      "slug": "mombar",
+      "name": {
+        "ar": "الممبار",
+        "en": "Mombar"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 10
+    },
+    {
+      "id": "cat_mahshi",
+      "slug": "mahshi",
+      "name": {
+        "ar": "المحاشي",
+        "en": "Mahshi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 11
+    },
+    {
+      "id": "cat_salads",
+      "slug": "salads",
+      "name": {
+        "ar": "السلطات",
+        "en": "Salads"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 12
+    },
+    {
+      "id": "cat_drinks",
+      "slug": "drinks",
+      "name": {
+        "ar": "المشروبات",
+        "en": "Drinks"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "sortOrder": 13
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_baladi-kofta",
+      "slug": "baladi-kofta",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "كفته بلدي",
+        "en": "Baladi kofta"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "percent",
+      "discountValue": 15,
+      "defaultVariantId": "var_baladi-kofta_quarter-kg",
+      "variants": [
+        {
+          "id": "var_baladi-kofta_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 72000,
+          "priceEgp": 720,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-kofta_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 36000,
+          "priceEgp": 360,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-kofta_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 18000,
+          "priceEgp": 180,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_baladi-kofta_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 9000,
+          "priceEgp": 90,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/chicken-kofta.jpg",
+          "sourceFile": "docs/brand/assets/products/chicken-kofta.jpg",
+          "alt": {
+            "ar": "كفته بلدي",
+            "en": "Baladi kofta"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_baladi-tarab",
+      "slug": "baladi-tarab",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "طرب بلدي",
+        "en": "Baladi tarab"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_baladi-tarab_quarter-kg",
+      "variants": [
+        {
+          "id": "var_baladi-tarab_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 74000,
+          "priceEgp": 740,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-tarab_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 37000,
+          "priceEgp": 370,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-tarab_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 18500,
+          "priceEgp": 185,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_baladi-tarab_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 9000,
+          "priceEgp": 90,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طرب بلدي",
+            "en": "Baladi tarab"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_flattened-kofta",
+      "slug": "flattened-kofta",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "كفته مبطط",
+        "en": "Flattened kofta"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_flattened-kofta_quarter-kg",
+      "variants": [
+        {
+          "id": "var_flattened-kofta_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 72000,
+          "priceEgp": 720,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_flattened-kofta_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 36000,
+          "priceEgp": 360,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_flattened-kofta_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 18000,
+          "priceEgp": 180,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_flattened-kofta_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 9000,
+          "priceEgp": 90,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "كفته مبطط",
+            "en": "Flattened kofta"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_baladi-sausage",
+      "slug": "baladi-sausage",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "سجق بلدي",
+        "en": "Baladi sausage"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_baladi-sausage_quarter-kg",
+      "variants": [
+        {
+          "id": "var_baladi-sausage_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 72000,
+          "priceEgp": 720,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-sausage_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 36000,
+          "priceEgp": 360,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_baladi-sausage_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 18000,
+          "priceEgp": 180,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_baladi-sausage_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 9000,
+          "priceEgp": 90,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سجق بلدي",
+            "en": "Baladi sausage"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_steak-kabab",
+      "slug": "steak-kabab",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "كباب ستيك",
+        "en": "Steak kabab"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_steak-kabab_quarter-kg",
+      "variants": [
+        {
+          "id": "var_steak-kabab_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 98000,
+          "priceEgp": 980,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_steak-kabab_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 49500,
+          "priceEgp": 495,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_steak-kabab_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 25000,
+          "priceEgp": 250,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_steak-kabab_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 12500,
+          "priceEgp": 125,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/mixed-grill.jpg",
+          "sourceFile": "docs/brand/assets/products/mixed-grill.jpg",
+          "alt": {
+            "ar": "كباب ستيك",
+            "en": "Steak kabab"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_lamb-kabab",
+      "slug": "lamb-kabab",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "كباب ضاني",
+        "en": "Lamb kabab"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_lamb-kabab_quarter-kg",
+      "variants": [
+        {
+          "id": "var_lamb-kabab_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 100000,
+          "priceEgp": 1000,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-kabab_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 50000,
+          "priceEgp": 500,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-kabab_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 25000,
+          "priceEgp": 250,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_lamb-kabab_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 13000,
+          "priceEgp": 130,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "كباب ضاني",
+            "en": "Lamb kabab"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_lamb-chops",
+      "slug": "lamb-chops",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "ريش ضاني صافي",
+        "en": "Lamb chops"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_lamb-chops_quarter-kg",
+      "variants": [
+        {
+          "id": "var_lamb-chops_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 130000,
+          "priceEgp": 1300,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-chops_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 65000,
+          "priceEgp": 650,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-chops_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 32500,
+          "priceEgp": 325,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ريش ضاني صافي",
+            "en": "Lamb chops"
+          }
+        }
+      ],
+      "sortOrder": 6,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_boneless-shish-tawook",
+      "slug": "boneless-shish-tawook",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "شيش طاووق مخلى",
+        "en": "Boneless shish tawook"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_boneless-shish-tawook_quarter-kg",
+      "variants": [
+        {
+          "id": "var_boneless-shish-tawook_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 50000,
+          "priceEgp": 500,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_boneless-shish-tawook_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 25000,
+          "priceEgp": 250,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_boneless-shish-tawook_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 12500,
+          "priceEgp": 125,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_boneless-shish-tawook_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 7000,
+          "priceEgp": 70,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "شيش طاووق مخلى",
+            "en": "Boneless shish tawook"
+          }
+        }
+      ],
+      "sortOrder": 7,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_charcoal-shish-chicken",
+      "slug": "charcoal-shish-chicken",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "فرخة شيش فحم",
+        "en": "Charcoal shish chicken"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "percent",
+      "discountValue": 20,
+      "defaultVariantId": "var_charcoal-shish-chicken_quarter",
+      "variants": [
+        {
+          "id": "var_charcoal-shish-chicken_whole",
+          "code": "whole",
+          "name": {
+            "ar": "كاملة",
+            "en": "Whole"
+          },
+          "priceAmount": 42000,
+          "priceEgp": 420,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_charcoal-shish-chicken_half",
+          "code": "half",
+          "name": {
+            "ar": "1/2",
+            "en": "Half"
+          },
+          "priceAmount": 22000,
+          "priceEgp": 220,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_charcoal-shish-chicken_quarter",
+          "code": "quarter",
+          "name": {
+            "ar": "1/4",
+            "en": "Quarter"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/charcoal-shish-chicken.jpg",
+          "sourceFile": "docs/brand/assets/products/charcoal-shish-chicken.jpg",
+          "alt": {
+            "ar": "فرخة شيش فحم",
+            "en": "Charcoal shish chicken"
+          }
+        }
+      ],
+      "sortOrder": 8,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_chicken-tikka",
+      "slug": "chicken-tikka",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "فرخة تكا",
+        "en": "Chicken tikka"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_chicken-tikka_quarter",
+      "variants": [
+        {
+          "id": "var_chicken-tikka_whole",
+          "code": "whole",
+          "name": {
+            "ar": "كاملة",
+            "en": "Whole"
+          },
+          "priceAmount": 42000,
+          "priceEgp": 420,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_chicken-tikka_half",
+          "code": "half",
+          "name": {
+            "ar": "1/2",
+            "en": "Half"
+          },
+          "priceAmount": 22000,
+          "priceEgp": 220,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_chicken-tikka_quarter",
+          "code": "quarter",
+          "name": {
+            "ar": "1/4",
+            "en": "Quarter"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/chicken-tikka.jpg",
+          "sourceFile": "docs/brand/assets/products/chicken-tikka.jpg",
+          "alt": {
+            "ar": "فرخة تكا",
+            "en": "Chicken tikka"
+          }
+        }
+      ],
+      "sortOrder": 9,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_lamb-liver",
+      "slug": "lamb-liver",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "كبده ضاني",
+        "en": "Lamb liver"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_lamb-liver_quarter-kg",
+      "variants": [
+        {
+          "id": "var_lamb-liver_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 90000,
+          "priceEgp": 900,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-liver_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 45000,
+          "priceEgp": 450,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_lamb-liver_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 22500,
+          "priceEgp": 225,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_lamb-liver_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 11500,
+          "priceEgp": 115,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1496412705862-e0088f16f791?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "كبده ضاني",
+            "en": "Lamb liver"
+          }
+        }
+      ],
+      "sortOrder": 10,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_heart-kidneys-and-offal",
+      "slug": "heart-kidneys-and-offal",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "قلب وكلاوى - مخاصي",
+        "en": "Heart, kidneys and offal"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_heart-kidneys-and-offal_quarter-kg",
+      "variants": [
+        {
+          "id": "var_heart-kidneys-and-offal_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 90000,
+          "priceEgp": 900,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_heart-kidneys-and-offal_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 45000,
+          "priceEgp": 450,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_heart-kidneys-and-offal_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 22500,
+          "priceEgp": 225,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        },
+        {
+          "id": "var_heart-kidneys-and-offal_eighth-kg",
+          "code": "eighth-kg",
+          "name": {
+            "ar": "1/8 ك",
+            "en": "1/8 kg"
+          },
+          "priceAmount": 11500,
+          "priceEgp": 115,
+          "isImplicit": false,
+          "sortOrder": 3,
+          "isDefault": false
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "قلب وكلاوى - مخاصي",
+            "en": "Heart, kidneys and offal"
+          }
+        }
+      ],
+      "sortOrder": 11,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_stuffed-pigeon-with-rice",
+      "slug": "stuffed-pigeon-with-rice",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "فرد حمام محشي أرز",
+        "en": "Stuffed pigeon with rice"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_stuffed-pigeon-with-rice_single",
+      "variants": [
+        {
+          "id": "var_stuffed-pigeon-with-rice_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 19500,
+          "priceEgp": 195,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/stuffed-pigeon.jpg",
+          "sourceFile": "docs/brand/assets/products/stuffed-pigeon.jpg",
+          "alt": {
+            "ar": "فرد حمام محشي أرز",
+            "en": "Stuffed pigeon with rice"
+          }
+        }
+      ],
+      "sortOrder": 12,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_mixed-grill",
+      "slug": "mixed-grill",
+      "categoryId": "cat_grills",
+      "title": {
+        "ar": "مشكل",
+        "en": "Mixed grill"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-grill_quarter-kg",
+      "variants": [
+        {
+          "id": "var_mixed-grill_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1 ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 86000,
+          "priceEgp": 860,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_mixed-grill_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2 ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 43000,
+          "priceEgp": 430,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_mixed-grill_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4 ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 22000,
+          "priceEgp": 220,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/mixed-grill.jpg",
+          "sourceFile": "docs/brand/assets/products/mixed-grill.jpg",
+          "alt": {
+            "ar": "مشكل",
+            "en": "Mixed grill"
+          }
+        }
+      ],
+      "sortOrder": 13,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_liver-grill-plate-1-4-kg",
+      "slug": "liver-grill-plate-1-4-kg",
+      "categoryId": "cat_grill",
+      "title": {
+        "ar": "ورقة كبده 1/4 ك",
+        "en": "Liver grill plate 1/4 kg"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_liver-grill-plate-1-4-kg_single",
+      "variants": [
+        {
+          "id": "var_liver-grill-plate-1-4-kg_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 24000,
+          "priceEgp": 240,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ورقة كبده 1/4 ك",
+            "en": "Liver grill plate 1/4 kg"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_sausage-grill-plate-1-4-kg",
+      "slug": "sausage-grill-plate-1-4-kg",
+      "categoryId": "cat_grill",
+      "title": {
+        "ar": "ورقة سجق 1/4 ك",
+        "en": "Sausage grill plate 1/4 kg"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_sausage-grill-plate-1-4-kg_single",
+      "variants": [
+        {
+          "id": "var_sausage-grill-plate-1-4-kg_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 19500,
+          "priceEgp": 195,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ورقة سجق 1/4 ك",
+            "en": "Sausage grill plate 1/4 kg"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_meat-grill-plate-1-4-kg",
+      "slug": "meat-grill-plate-1-4-kg",
+      "categoryId": "cat_grill",
+      "title": {
+        "ar": "ورقة لحمة 1/4 ك",
+        "en": "Meat grill plate 1/4 kg"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_meat-grill-plate-1-4-kg_single",
+      "variants": [
+        {
+          "id": "var_meat-grill-plate-1-4-kg_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 24500,
+          "priceEgp": 245,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ورقة لحمة 1/4 ك",
+            "en": "Meat grill plate 1/4 kg"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_shish-grill-plate-1-4-kg",
+      "slug": "shish-grill-plate-1-4-kg",
+      "categoryId": "cat_grill",
+      "title": {
+        "ar": "ورقة شيش 1/4 ك",
+        "en": "Shish grill plate 1/4 kg"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_shish-grill-plate-1-4-kg_single",
+      "variants": [
+        {
+          "id": "var_shish-grill-plate-1-4-kg_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 16000,
+          "priceEgp": 160,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ورقة شيش 1/4 ك",
+            "en": "Shish grill plate 1/4 kg"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_shaaban-platter-serves-8",
+      "slug": "shaaban-platter-serves-8",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية شعبان (تكفي 8 أفراد)",
+        "en": "Shaaban platter (serves 8)"
+      },
+      "description": {
+        "ar": "فرخة شيش فحم + 1/4 ك كفته + 1/4 ك طرب + 1/4 ك ريش + 1/4 سجق + 1/4 ك كفته مبطط + 1/4 كبده مشوى + 1/4 شيش طاووق + أرز بسمتي + 1/4 محشي + 1/4 ممبار",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_shaaban-platter-serves-8_single",
+      "variants": [
+        {
+          "id": "var_shaaban-platter-serves-8_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 240000,
+          "priceEgp": 2400,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "صينية شعبان (تكفي 8 أفراد)",
+            "en": "Shaaban platter (serves 8)"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_laylat-al-omr-platter",
+      "slug": "laylat-al-omr-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية ليلة العمر",
+        "en": "Laylat Al-Omr platter"
+      },
+      "description": {
+        "ar": "4 حمام + 1 ك كفته + 1/2 ك سجق + 1/2 ك استيك + 1/4 ك طرب + 1/2 ممبار + 1/2 شيش طاووق + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_laylat-al-omr-platter_single",
+      "variants": [
+        {
+          "id": "var_laylat-al-omr-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 260000,
+          "priceEgp": 2600,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "صينية ليلة العمر",
+            "en": "Laylat Al-Omr platter"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mixed-platter",
+      "slug": "mixed-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية مشكل",
+        "en": "Mixed platter"
+      },
+      "description": {
+        "ar": "1/2 ك كفته + 1/2 ك كباب + 1/4 سجق + 1/2 شيش طاووق + 1/4 كبده + 1/2 ممبار + 1/2 محشي + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-platter_single",
+      "variants": [
+        {
+          "id": "var_mixed-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 130000,
+          "priceEgp": 1300,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/chicken-kofta.jpg",
+          "sourceFile": "docs/brand/assets/products/chicken-kofta.jpg",
+          "alt": {
+            "ar": "صينية مشكل",
+            "en": "Mixed platter"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_shahr-el-kheir-platter",
+      "slug": "shahr-el-kheir-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية شهر الخير",
+        "en": "Shahr El-Kheir platter"
+      },
+      "description": {
+        "ar": "فرخة شيش فحم + 1/2 ك كفته + 1/4 ك كباب + 1/4 سجق + 1/4 ممبار + 1/4 محشي + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_shahr-el-kheir-platter_single",
+      "variants": [
+        {
+          "id": "var_shahr-el-kheir-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 175000,
+          "priceEgp": 1750,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "صينية شهر الخير",
+            "en": "Shahr El-Kheir platter"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_friends-platter",
+      "slug": "friends-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية الصحاب",
+        "en": "Friends platter"
+      },
+      "description": {
+        "ar": "1/4 كباب + 1/2 ك كفته + 1/2 ك طرب + 1/2 فرخة + 1/2 سجق + 1/2 ممبار + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "percent",
+      "discountValue": 10,
+      "defaultVariantId": "var_friends-platter_single",
+      "variants": [
+        {
+          "id": "var_friends-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 120000,
+          "priceEgp": 1200,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "/brand/products/friends-platter.jpg",
+          "sourceFile": "docs/brand/assets/products/friends-platter.jpg",
+          "alt": {
+            "ar": "صينية الصحاب",
+            "en": "Friends platter"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": true
+    },
+    {
+      "id": "prd_banquet-platter",
+      "slug": "banquet-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية الوليمة",
+        "en": "Banquet platter"
+      },
+      "description": {
+        "ar": "فرخة شيش فحم + 1/2 ك كفته + 1/4 كباب + 1/4 طرب + 1/4 شيش طاووق + 1/4 ممبار + 1/4 محشي + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_banquet-platter_single",
+      "variants": [
+        {
+          "id": "var_banquet-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 220000,
+          "priceEgp": 2200,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "صينية الوليمة",
+            "en": "Banquet platter"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_shaaban-mixed-grill-platter",
+      "slug": "shaaban-mixed-grill-platter",
+      "categoryId": "cat_family-platters",
+      "title": {
+        "ar": "صينية ميكس مشويات شعبان",
+        "en": "Shaaban mixed grill platter"
+      },
+      "description": {
+        "ar": "4 حمام + 1/2 ك كفته + 1/2 طرب + 1/2 كباب + فرخة + 1/2 سجق + 1/2 ممبار + 1/2 محشي + أرز بسمتي",
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_shaaban-mixed-grill-platter_single",
+      "variants": [
+        {
+          "id": "var_shaaban-mixed-grill-platter_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 305000,
+          "priceEgp": 3050,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "صينية ميكس مشويات شعبان",
+            "en": "Shaaban mixed grill platter"
+          }
+        }
+      ],
+      "sortOrder": 6,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_charcoal-lamb-shank",
+      "slug": "charcoal-lamb-shank",
+      "categoryId": "cat_lamb-shank",
+      "title": {
+        "ar": "موزة على الفحم",
+        "en": "Charcoal lamb shank"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_charcoal-lamb-shank_single",
+      "variants": [
+        {
+          "id": "var_charcoal-lamb-shank_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 38000,
+          "priceEgp": 380,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "موزة على الفحم",
+            "en": "Charcoal lamb shank"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_turkish-style-lamb-shank",
+      "slug": "turkish-style-lamb-shank",
+      "categoryId": "cat_lamb-shank",
+      "title": {
+        "ar": "موزة تركي",
+        "en": "Turkish-style lamb shank"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_turkish-style-lamb-shank_single",
+      "variants": [
+        {
+          "id": "var_turkish-style-lamb-shank_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 40000,
+          "priceEgp": 400,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "موزة تركي",
+            "en": "Turkish-style lamb shank"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_cheese-sambousak",
+      "slug": "cheese-sambousak",
+      "categoryId": "cat_sambousak",
+      "title": {
+        "ar": "سمبوسك جبنة",
+        "en": "Cheese sambousak"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_cheese-sambousak_quarter",
+      "variants": [
+        {
+          "id": "var_cheese-sambousak_quarter",
+          "code": "quarter",
+          "name": {
+            "ar": "1/4",
+            "en": "Quarter"
+          },
+          "priceAmount": 10000,
+          "priceEgp": 100,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سمبوسك جبنة",
+            "en": "Cheese sambousak"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_meat-sambousak",
+      "slug": "meat-sambousak",
+      "categoryId": "cat_sambousak",
+      "title": {
+        "ar": "سمبوسك لحمة",
+        "en": "Meat sambousak"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_meat-sambousak_quarter",
+      "variants": [
+        {
+          "id": "var_meat-sambousak_quarter",
+          "code": "quarter",
+          "name": {
+            "ar": "1/4",
+            "en": "Quarter"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سمبوسك لحمة",
+            "en": "Meat sambousak"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mixed-sambousak",
+      "slug": "mixed-sambousak",
+      "categoryId": "cat_sambousak",
+      "title": {
+        "ar": "سمبوسك مشكل",
+        "en": "Mixed sambousak"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-sambousak_quarter",
+      "variants": [
+        {
+          "id": "var_mixed-sambousak_quarter",
+          "code": "quarter",
+          "name": {
+            "ar": "1/4",
+            "en": "Quarter"
+          },
+          "priceAmount": 10000,
+          "priceEgp": 100,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سمبوسك مشكل",
+            "en": "Mixed sambousak"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_hawawshi",
+      "slug": "hawawshi",
+      "categoryId": "cat_hawawshi",
+      "title": {
+        "ar": "حواوشي عادي",
+        "en": "Hawawshi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_hawawshi_single",
+      "variants": [
+        {
+          "id": "var_hawawshi_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 5000,
+          "priceEgp": 50,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "حواوشي عادي",
+            "en": "Hawawshi"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_special-hawawshi",
+      "slug": "special-hawawshi",
+      "categoryId": "cat_hawawshi",
+      "title": {
+        "ar": "حواوشي مخصوص",
+        "en": "Special hawawshi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_special-hawawshi_single",
+      "variants": [
+        {
+          "id": "var_special-hawawshi_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 9000,
+          "priceEgp": 90,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "حواوشي مخصوص",
+            "en": "Special hawawshi"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_kofta-sandwich",
+      "slug": "kofta-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش كفته",
+        "en": "Kofta sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_kofta-sandwich_single",
+      "variants": [
+        {
+          "id": "var_kofta-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 6500,
+          "priceEgp": 65,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش كفته",
+            "en": "Kofta sandwich"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_kabab-sandwich",
+      "slug": "kabab-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش كباب",
+        "en": "Kabab sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_kabab-sandwich_single",
+      "variants": [
+        {
+          "id": "var_kabab-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش كباب",
+            "en": "Kabab sandwich"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_tarab-sandwich",
+      "slug": "tarab-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش طرب",
+        "en": "Tarab sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_tarab-sandwich_single",
+      "variants": [
+        {
+          "id": "var_tarab-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 10000,
+          "priceEgp": 100,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1481070414801-51fd732d7184?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش طرب",
+            "en": "Tarab sandwich"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_sausage-sandwich",
+      "slug": "sausage-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش سجق",
+        "en": "Sausage sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_sausage-sandwich_single",
+      "variants": [
+        {
+          "id": "var_sausage-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 10000,
+          "priceEgp": 100,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش سجق",
+            "en": "Sausage sandwich"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_shish-sandwich",
+      "slug": "shish-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش شيش",
+        "en": "Shish sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_shish-sandwich_single",
+      "variants": [
+        {
+          "id": "var_shish-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 8000,
+          "priceEgp": 80,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش شيش",
+            "en": "Shish sandwich"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mixed-sandwich",
+      "slug": "mixed-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش مشكل",
+        "en": "Mixed sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-sandwich_single",
+      "variants": [
+        {
+          "id": "var_mixed-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش مشكل",
+            "en": "Mixed sandwich"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_grilled-liver-sandwich",
+      "slug": "grilled-liver-sandwich",
+      "categoryId": "cat_sandwiches",
+      "title": {
+        "ar": "سندوتش كبده جريل مشوى",
+        "en": "Grilled liver sandwich"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_grilled-liver-sandwich_single",
+      "variants": [
+        {
+          "id": "var_grilled-liver-sandwich_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 12000,
+          "priceEgp": 120,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سندوتش كبده جريل مشوى",
+            "en": "Grilled liver sandwich"
+          }
+        }
+      ],
+      "sortOrder": 6,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_orzo-tagine",
+      "slug": "orzo-tagine",
+      "categoryId": "cat_kitchen-sides",
+      "title": {
+        "ar": "طاجن لسان عصفور",
+        "en": "Orzo tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_orzo-tagine_single",
+      "variants": [
+        {
+          "id": "var_orzo-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 2000,
+          "priceEgp": 20,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن لسان عصفور",
+            "en": "Orzo tagine"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_fried-potatoes",
+      "slug": "fried-potatoes",
+      "categoryId": "cat_kitchen-sides",
+      "title": {
+        "ar": "بطاطس محمرة",
+        "en": "Fried potatoes"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_fried-potatoes_single",
+      "variants": [
+        {
+          "id": "var_fried-potatoes_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 4500,
+          "priceEgp": 45,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "بطاطس محمرة",
+            "en": "Fried potatoes"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_rice-with-vermicelli",
+      "slug": "rice-with-vermicelli",
+      "categoryId": "cat_kitchen-sides",
+      "title": {
+        "ar": "أرز بالشعرية",
+        "en": "Rice with vermicelli"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_rice-with-vermicelli_single",
+      "variants": [
+        {
+          "id": "var_rice-with-vermicelli_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 4500,
+          "priceEgp": 45,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "أرز بالشعرية",
+            "en": "Rice with vermicelli"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_rice-with-liver",
+      "slug": "rice-with-liver",
+      "categoryId": "cat_kitchen-sides",
+      "title": {
+        "ar": "أرز بالكبدة",
+        "en": "Rice with liver"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_rice-with-liver_single",
+      "variants": [
+        {
+          "id": "var_rice-with-liver_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 14500,
+          "priceEgp": 145,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "أرز بالكبدة",
+            "en": "Rice with liver"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_rice-with-sausage",
+      "slug": "rice-with-sausage",
+      "categoryId": "cat_kitchen-sides",
+      "title": {
+        "ar": "أرز بالسجق",
+        "en": "Rice with sausage"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_rice-with-sausage_single",
+      "variants": [
+        {
+          "id": "var_rice-with-sausage_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 13500,
+          "priceEgp": 135,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "أرز بالسجق",
+            "en": "Rice with sausage"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pasta-with-sausage",
+      "slug": "pasta-with-sausage",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة بالسجق",
+        "en": "Pasta with sausage"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pasta-with-sausage_single",
+      "variants": [
+        {
+          "id": "var_pasta-with-sausage_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 13500,
+          "priceEgp": 135,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة بالسجق",
+            "en": "Pasta with sausage"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pasta-with-liver",
+      "slug": "pasta-with-liver",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة بالكبدة",
+        "en": "Pasta with liver"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pasta-with-liver_single",
+      "variants": [
+        {
+          "id": "var_pasta-with-liver_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 14500,
+          "priceEgp": 145,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة بالكبدة",
+            "en": "Pasta with liver"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pasta-with-minced-meat",
+      "slug": "pasta-with-minced-meat",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة لحمة مفرومة",
+        "en": "Pasta with minced meat"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pasta-with-minced-meat_single",
+      "variants": [
+        {
+          "id": "var_pasta-with-minced-meat_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 14000,
+          "priceEgp": 140,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1626844131082-256783844137?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة لحمة مفرومة",
+            "en": "Pasta with minced meat"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_plain-pasta",
+      "slug": "plain-pasta",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة سادة",
+        "en": "Plain pasta"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_plain-pasta_single",
+      "variants": [
+        {
+          "id": "var_plain-pasta_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 4500,
+          "priceEgp": 45,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة سادة",
+            "en": "Plain pasta"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pasta-with-shish-tawook",
+      "slug": "pasta-with-shish-tawook",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة شيش طاووق",
+        "en": "Pasta with shish tawook"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pasta-with-shish-tawook_single",
+      "variants": [
+        {
+          "id": "var_pasta-with-shish-tawook_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 13500,
+          "priceEgp": 135,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة شيش طاووق",
+            "en": "Pasta with shish tawook"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_bechamel-pasta-with-minced-meat",
+      "slug": "bechamel-pasta-with-minced-meat",
+      "categoryId": "cat_pasta",
+      "title": {
+        "ar": "مكرونة بشاميل باللحمة المفرومة",
+        "en": "Béchamel pasta with minced meat"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_bechamel-pasta-with-minced-meat_single",
+      "variants": [
+        {
+          "id": "var_bechamel-pasta-with-minced-meat_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 13000,
+          "priceEgp": 130,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مكرونة بشاميل باللحمة المفرومة",
+            "en": "Béchamel pasta with minced meat"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_meat-and-onion-tagine",
+      "slug": "meat-and-onion-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن لحمة بالبصل",
+        "en": "Meat and onion tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_meat-and-onion-tagine_single",
+      "variants": [
+        {
+          "id": "var_meat-and-onion-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 36000,
+          "priceEgp": 360,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن لحمة بالبصل",
+            "en": "Meat and onion tagine"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_potato-and-meat-tagine",
+      "slug": "potato-and-meat-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن بطاطس باللحمة",
+        "en": "Potato and meat tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_potato-and-meat-tagine_single",
+      "variants": [
+        {
+          "id": "var_potato-and-meat-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 26000,
+          "priceEgp": 260,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن بطاطس باللحمة",
+            "en": "Potato and meat tagine"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_okra-and-meat-tagine",
+      "slug": "okra-and-meat-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن باميه باللحمة",
+        "en": "Okra and meat tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_okra-and-meat-tagine_single",
+      "variants": [
+        {
+          "id": "var_okra-and-meat-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 26000,
+          "priceEgp": 260,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن باميه باللحمة",
+            "en": "Okra and meat tagine"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_molokhia-tagine",
+      "slug": "molokhia-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن ملوخية",
+        "en": "Molokhia tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_molokhia-tagine_single",
+      "variants": [
+        {
+          "id": "var_molokhia-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 4500,
+          "priceEgp": 45,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن ملوخية",
+            "en": "Molokhia tagine"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_trotters-with-vine-leaves-tagine",
+      "slug": "trotters-with-vine-leaves-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن كوارع بورق العنب",
+        "en": "Trotters with vine leaves tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_trotters-with-vine-leaves-tagine_single",
+      "variants": [
+        {
+          "id": "var_trotters-with-vine-leaves-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 30000,
+          "priceEgp": 300,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن كوارع بورق العنب",
+            "en": "Trotters with vine leaves tagine"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mixed-vegetable-and-meat-tagine",
+      "slug": "mixed-vegetable-and-meat-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن خضار مشكل باللحمة",
+        "en": "Mixed vegetable and meat tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-vegetable-and-meat-tagine_single",
+      "variants": [
+        {
+          "id": "var_mixed-vegetable-and-meat-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 26000,
+          "priceEgp": 260,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن خضار مشكل باللحمة",
+            "en": "Mixed vegetable and meat tagine"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_akkawi-tagine",
+      "slug": "akkawi-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن عكاوي",
+        "en": "Akkawi tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_akkawi-tagine_single",
+      "variants": [
+        {
+          "id": "var_akkawi-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 32000,
+          "priceEgp": 320,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن عكاوي",
+            "en": "Akkawi tagine"
+          }
+        }
+      ],
+      "sortOrder": 6,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_freekeh-tagine",
+      "slug": "freekeh-tagine",
+      "categoryId": "cat_tagens",
+      "title": {
+        "ar": "طاجن فريك",
+        "en": "Freekeh tagine"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_freekeh-tagine_single",
+      "variants": [
+        {
+          "id": "var_freekeh-tagine_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 26000,
+          "priceEgp": 260,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طاجن فريك",
+            "en": "Freekeh tagine"
+          }
+        }
+      ],
+      "sortOrder": 7,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mombar",
+      "slug": "mombar",
+      "categoryId": "cat_mombar",
+      "title": {
+        "ar": "ممبار",
+        "en": "Mombar"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mombar_quarter-kg",
+      "variants": [
+        {
+          "id": "var_mombar_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 40000,
+          "priceEgp": 400,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_mombar_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 20000,
+          "priceEgp": 200,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_mombar_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 10000,
+          "priceEgp": 100,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ممبار",
+            "en": "Mombar"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_stuffed-vine-leaves",
+      "slug": "stuffed-vine-leaves",
+      "categoryId": "cat_mahshi",
+      "title": {
+        "ar": "ورق عنب",
+        "en": "Stuffed vine leaves"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_stuffed-vine-leaves_quarter-kg",
+      "variants": [
+        {
+          "id": "var_stuffed-vine-leaves_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 35000,
+          "priceEgp": 350,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_stuffed-vine-leaves_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 17500,
+          "priceEgp": 175,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_stuffed-vine-leaves_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 9500,
+          "priceEgp": 95,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "ورق عنب",
+            "en": "Stuffed vine leaves"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mixed-mahshi",
+      "slug": "mixed-mahshi",
+      "categoryId": "cat_mahshi",
+      "title": {
+        "ar": "محشي مشكل",
+        "en": "Mixed mahshi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mixed-mahshi_quarter-kg",
+      "variants": [
+        {
+          "id": "var_mixed-mahshi_1kg",
+          "code": "1kg",
+          "name": {
+            "ar": "1ك",
+            "en": "1 kg"
+          },
+          "priceAmount": 38000,
+          "priceEgp": 380,
+          "isImplicit": false,
+          "sortOrder": 0,
+          "isDefault": false
+        },
+        {
+          "id": "var_mixed-mahshi_half-kg",
+          "code": "half-kg",
+          "name": {
+            "ar": "1/2ك",
+            "en": "1/2 kg"
+          },
+          "priceAmount": 19000,
+          "priceEgp": 190,
+          "isImplicit": false,
+          "sortOrder": 1,
+          "isDefault": false
+        },
+        {
+          "id": "var_mixed-mahshi_quarter-kg",
+          "code": "quarter-kg",
+          "name": {
+            "ar": "1/4ك",
+            "en": "1/4 kg"
+          },
+          "priceAmount": 9500,
+          "priceEgp": 95,
+          "isImplicit": false,
+          "sortOrder": 2,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "محشي مشكل",
+            "en": "Mixed mahshi"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_green-salad",
+      "slug": "green-salad",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "سلطة خضراء",
+        "en": "Green salad"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_green-salad_single",
+      "variants": [
+        {
+          "id": "var_green-salad_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سلطة خضراء",
+            "en": "Green salad"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_tahini-salad",
+      "slug": "tahini-salad",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "سلطة طحينة",
+        "en": "Tahini salad"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_tahini-salad_single",
+      "variants": [
+        {
+          "id": "var_tahini-salad_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سلطة طحينة",
+            "en": "Tahini salad"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_eggplant-pickles",
+      "slug": "eggplant-pickles",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "باذنجان / مخلل",
+        "en": "Eggplant / pickles"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_eggplant-pickles_single",
+      "variants": [
+        {
+          "id": "var_eggplant-pickles_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "باذنجان / مخلل",
+            "en": "Eggplant / pickles"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pickled-potatoes",
+      "slug": "pickled-potatoes",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "بطاطس مخلل",
+        "en": "Pickled potatoes"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pickled-potatoes_single",
+      "variants": [
+        {
+          "id": "var_pickled-potatoes_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "بطاطس مخلل",
+            "en": "Pickled potatoes"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_seasoned-tomatoes",
+      "slug": "seasoned-tomatoes",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "طماطم متبلة",
+        "en": "Seasoned tomatoes"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_seasoned-tomatoes_single",
+      "variants": [
+        {
+          "id": "var_seasoned-tomatoes_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "طماطم متبلة",
+            "en": "Seasoned tomatoes"
+          }
+        }
+      ],
+      "sortOrder": 4,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_baba-ghanoush",
+      "slug": "baba-ghanoush",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "سلطة بابا غنوج",
+        "en": "Baba ghanoush"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_baba-ghanoush_single",
+      "variants": [
+        {
+          "id": "var_baba-ghanoush_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سلطة بابا غنوج",
+            "en": "Baba ghanoush"
+          }
+        }
+      ],
+      "sortOrder": 5,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_seasoned-cheese-salad",
+      "slug": "seasoned-cheese-salad",
+      "categoryId": "cat_salads",
+      "title": {
+        "ar": "سلطة جبنة متبلة",
+        "en": "Seasoned cheese salad"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_seasoned-cheese-salad_single",
+      "variants": [
+        {
+          "id": "var_seasoned-cheese-salad_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1500,
+          "priceEgp": 15,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "سلطة جبنة متبلة",
+            "en": "Seasoned cheese salad"
+          }
+        }
+      ],
+      "sortOrder": 6,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_mineral-water",
+      "slug": "mineral-water",
+      "categoryId": "cat_drinks",
+      "title": {
+        "ar": "مياه معدنية",
+        "en": "Mineral water"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_mineral-water_single",
+      "variants": [
+        {
+          "id": "var_mineral-water_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1000,
+          "priceEgp": 10,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "مياه معدنية",
+            "en": "Mineral water"
+          }
+        }
+      ],
+      "sortOrder": 0,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_pepsi",
+      "slug": "pepsi",
+      "categoryId": "cat_drinks",
+      "title": {
+        "ar": "بيبسي",
+        "en": "Pepsi"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_pepsi_single",
+      "variants": [
+        {
+          "id": "var_pepsi_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 1500,
+          "priceEgp": 15,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "بيبسي",
+            "en": "Pepsi"
+          }
+        }
+      ],
+      "sortOrder": 1,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_tea",
+      "slug": "tea",
+      "categoryId": "cat_drinks",
+      "title": {
+        "ar": "شاي",
+        "en": "Tea"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_tea_single",
+      "variants": [
+        {
+          "id": "var_tea_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 2500,
+          "priceEgp": 25,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "شاي",
+            "en": "Tea"
+          }
+        }
+      ],
+      "sortOrder": 2,
+      "featuredOnHome": false
+    },
+    {
+      "id": "prd_coffee",
+      "slug": "coffee",
+      "categoryId": "cat_drinks",
+      "title": {
+        "ar": "قهوة",
+        "en": "Coffee"
+      },
+      "description": {
+        "ar": null,
+        "en": null
+      },
+      "status": "published",
+      "isAvailable": true,
+      "currency": "EGP",
+      "discountType": "none",
+      "discountValue": 0,
+      "defaultVariantId": "var_coffee_single",
+      "variants": [
+        {
+          "id": "var_coffee_single",
+          "code": "single",
+          "name": {
+            "ar": "حبة",
+            "en": "Single"
+          },
+          "priceAmount": 2500,
+          "priceEgp": 25,
+          "isImplicit": true,
+          "sortOrder": 0,
+          "isDefault": true
+        }
+      ],
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&h=900&q=80",
+          "alt": {
+            "ar": "قهوة",
+            "en": "Coffee"
+          }
+        }
+      ],
+      "sortOrder": 3,
+      "featuredOnHome": false
+    }
+  ],
+  "dataWarnings": [],
+  "counts": {
+    "categories": 14,
+    "products": 72,
+    "variants": 113,
+    "productsWithPhotos": 72
+  },
+  "hero": {
+    "file": "docs/brand/assets/banners/hero-grill.jpg",
+    "source": "imgs/photo_2026-09-08_16-06-43.jpg",
+    "why": "Full table: chicken, kofta, rice, salad, tahini, drink — best homepage hero"
+  },
+  "banners": [
+    {
+      "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=1400&h=900&q=80",
+      "link": "/menu/baladi-kofta",
+      "productId": "prd_baladi-kofta",
+      "title": {
+        "ar": "كفته بلدي",
+        "en": "Baladi kofta"
+      }
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=1400&h=900&q=80",
+      "link": "/menu/charcoal-shish-chicken",
+      "productId": "prd_charcoal-shish-chicken",
+      "title": {
+        "ar": "فرخة شيش فحم",
+        "en": "Charcoal shish chicken"
+      }
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1400&h=900&q=80",
+      "link": "/menu/friends-platter",
+      "productId": "prd_friends-platter",
+      "title": {
+        "ar": "صينية الصحاب",
+        "en": "Friends platter"
+      }
+    }
+  ]
+}

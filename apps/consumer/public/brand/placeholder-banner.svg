@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="بانر">
+  <rect width="1200" height="400" fill="#111111"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#D31A1A"/>
+  <rect x="0" y="388" width="1200" height="12" fill="#D31A1A"/>
+  <text x="80" y="175" fill="#FFFFFF" font-family="Cairo, Tahoma, sans-serif" font-size="56" font-weight="700">كبابجي شعبان</text>
+  <text x="80" y="240" fill="#D31A1A" font-family="Cairo, Tahoma, sans-serif" font-size="28">للسيخ .... تاريخ — السواح، العامرية — مفتوح 24 ساعة</text>
+</svg>

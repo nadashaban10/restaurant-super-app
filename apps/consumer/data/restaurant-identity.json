@@ -1,0 +1,133 @@
+{
+  "restaurantIdentity": {
+    "officialName": "Kababgy Shaaban",
+    "arabicName": "كبابجي شعبان",
+    "arabicNameVocalized": "كَبَابْجِي شَعْبَان",
+    "restaurantType": "Casual Egyptian Grill & Kebab House",
+    "cuisine": ["Egyptian", "Middle Eastern Grills"],
+    "description": "A traditional, unpretentious Egyptian Kababgy located in El Sawah (El Amerya, Cairo), specializing in flame-grilled meats, kofta, and authentic local meat dishes.",
+    "story": null,
+    "foundedYear": 1980,
+    "branches": [
+      {
+        "name": "El Sawah / El Amerya Branch",
+        "address": "El Sawah, El Amerya, Cairo, Egypt"
+      }
+    ],
+    "pricePositioning": "Budget to Mid-Range",
+    "targetAudience": [
+      "Local neighborhood residents",
+      "Families seeking hearty Egyptian grills",
+      "Late-night diners",
+      "Casual groups"
+    ],
+    "sellingPoints": [
+      "Authentic Egyptian local street-style charcoal-grilled meats",
+      "24/7 continuous operation ('Always Open')",
+      "Generous portion sizes and traditional local presentation"
+    ],
+    "differentiators": [
+      "Deep local connection in the El Sawah/El Amerya working-class/residential area",
+      "Authentic, non-commercialized neighborhood Kababgy experience"
+    ]
+  },
+  "egyptianIdentity": {
+    "classification": "Traditional Egyptian Grill (Kababgy)",
+    "isEgyptian": true,
+    "traditionalVsModern": "Traditional"
+  },
+  "brandIdentity": {
+    "personality": ["Authentic", "Unpretentious", "Generous", "Local", "Welcoming"],
+    "toneOfVoice": "Warm, casual Egyptian Arabic (Baladi / Local), inviting and approachable.",
+    "officialBrandColors": [
+      { "name": "brand-red", "hex": "#D31A1A", "use": "Logo oval, primary buttons, badges, links" },
+      { "name": "brand-black", "hex": "#111111", "use": "Logo frame, body text, footer" },
+      { "name": "brand-white", "hex": "#FFFFFF", "use": "Logo type, button text, header bar" }
+    ],
+    "tagline": {
+      "ar": "للسيخ .... تاريخ",
+      "en": "A history of the skewer"
+    },
+    "logoFile": "docs/brand/assets/logo.jpg",
+    "recommendedVisualDirection": {
+      "style": "Authentic Local Egyptian — match the official logo, not a generic fire/charcoal theme",
+      "mood": "Bold, appetizing, neighborhood kababgy",
+      "colorDirection": "Official: bright crimson red, solid black, white. Page surfaces stay light so the red logo pops. Do not use orange ember as primary.",
+      "typographyDirection": "Bold Arabic (Cairo) for UI; logo artwork is never redrawn as web text.",
+      "photographyDirection": "High-contrast close-up grilled meats. Avoid Western fast-food and Pharaonic clichés.",
+      "avoid": [
+        "Orange/ember palette that fights the red logo",
+        "Dark full-bleed headers that swallow the black logo border",
+        "Overly corporate or sterile ultra-minimalism",
+        "Generic Western fast-food visuals",
+        "Inaccurate Pharaonic clichés"
+      ]
+    }
+  },
+  "seo": {
+    "defaultLocale": "ar",
+    "secondaryLocale": "en",
+    "locality": "El Sawah",
+    "district": "El Amerya",
+    "city": "Cairo",
+    "country": "EG",
+    "openingHoursSpecification": "Mo-Su 00:00-24:00",
+    "priceRange": "$$",
+    "servesCuisine": ["Egyptian", "Kebab", "Grill"],
+    "facebook": "https://www.facebook.com/share/1CwbBW7tu7/?mibextid=wwXIfr",
+    "instagram": null,
+    "tiktok": null,
+    "phone": {
+      "primary": {
+        "raw": "01154626325",
+        "e164": "+201154626325",
+        "displayAr": "011 5462 6325",
+        "role": "orders"
+      },
+      "secondary": {
+        "raw": "01223375293",
+        "e164": "+201223375293",
+        "displayAr": "012 2337 5293",
+        "role": "orders"
+      },
+      "complaints": {
+        "raw": "01101421344",
+        "e164": "+201101421344",
+        "displayAr": "011 0142 1344",
+        "role": "complaints"
+      }
+    },
+    "geo": null
+  },
+  "assets": {
+    "logo": "docs/brand/assets/logo.jpg",
+    "placeholderProduct": "docs/brand/assets/placeholder-product.svg",
+    "placeholderBanner": "docs/brand/assets/placeholder-banner.svg",
+    "rule": "If product/banner image is null or fails to load, the consumer MUST render the matching placeholder. Real photos replace files in docs/brand/assets/ without changing component API."
+  },
+  "lockedCopy": {
+    "ar": {
+      "siteTitle": "كبابجي شعبان | مشويات وفحم في السواح، الأميريه",
+      "siteDescription": "كبابجي شعبان في السواح، الأميرية، القاهرة. مشويات بلدي، كفتة، كباب، طرب، حواوشي وصواني عائلات. مفتوح 24 ساعة.",
+      "ogTitle": "كبابجي شعبان — مشويات بلدي في السواح",
+      "hours": "مفتوح 24 ساعة",
+      "ctaOrder": "اطلب دلوقتي",
+      "ctaMenu": "شوف المنيو",
+      "tagline": "للسيخ .... تاريخ",
+      "taglineVocalized": "لِلسِّيخْ .... تَارِيخْ",
+      "callUs": "كلمنا",
+      "complaints": "شكاوى"
+    },
+    "en": {
+      "siteTitle": "Kababgy Shaaban | Egyptian Grill in El Sawah, Amerya,Cairo",
+      "siteDescription": "Kababgy Shaaban in El Sawah, El Amerya, Cairo. Charcoal kofta, kabab, tarab, hawawshi and family platters. Open 24 hours.",
+      "ogTitle": "Kababgy Shaaban — Egyptian grills in El Sawah",
+      "hours": "Open 24 hours",
+      "ctaOrder": "Order now",
+      "ctaMenu": "View menu",
+      "tagline": "A history of the skewer",
+      "callUs": "Call us",
+      "complaints": "Complaints"
+    }
+  }
+}

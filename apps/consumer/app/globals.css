@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+:root {
+  --brand-red: #d31a1a;
+  --brand-red-hover: #b01414;
+  --brand-red-soft: #fdecec;
+  --brand-black: #111111;
+  --brand-white: #ffffff;
+  --page-bg: #f7f7f7;
+  --surface: #ffffff;
+  --muted: #6b6b6b;
+  --success: #2f6b3a;
+  --success-soft: #e8f5eb;
+  --warning: #9a6700;
+  --warning-soft: #fff8e6;
+  --danger: #9b1c1c;
+  --danger-soft: #fde8e8;
+  --border: rgba(17, 17, 17, 0.08);
+  --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.06);
+  --shadow-md: 0 8px 24px rgba(17, 17, 17, 0.08);
+  --shadow-lg: 0 16px 40px rgba(17, 17, 17, 0.12);
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --font-cairo: "Cairo", sans-serif;
+  --header-offset: 4.5rem;
+}
+
+@theme inline {
+  --color-background: var(--page-bg);
+  --color-foreground: var(--brand-black);
+  --font-sans: var(--font-cairo);
+}
+
+html,
+body {
+  background: var(--page-bg);
+  color: var(--brand-black);
+}
+
+body {
+  min-height: 100dvh;
+  font-family: var(--font-cairo), "Cairo", Tahoma, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand-red);
+  outline-offset: 2px;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+@keyframes ks-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ks-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes ks-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ks-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.ks-fade-in {
+  animation: ks-fade-in 0.45s ease-out both;
+}
+
+.ks-toast-in {
+  animation: ks-toast-in 0.28s ease-out both;
+}
+
+.ks-spin {
+  animation: ks-spin 0.7s linear infinite;
+}
+
+.ks-skeleton {
+  background: linear-gradient(
+    90deg,
+    #ececec 0%,
+    #f6f6f6 45%,
+    #ececec 90%
+  );
+  background-size: 200% 100%;
+  animation: ks-shimmer 1.4s ease-in-out infinite;
+}
+
+.ks-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.ks-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(211, 26, 26, 0.12);
+}
+
+.ks-pressable:active {
+  transform: scale(0.98);
+}
+
+.ks-naskh {
+  font-family: var(--font-amiri), "Amiri", "Noto Naskh Arabic", serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .ks-card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "currency": "EGP",
+  "categories": [
+    {
+      "name": "المشويات",
+      "description": null,
+      "items": [
+        {
+          "name": "كفته بلدي",
+          "description": null,
+          "price": null,
+          "image": null,
+          "variants": [
+            { "name": "1 ك", "price": 720 },
+            { "name": "1/2 ك", "price": 360 },
+            { "name": "1/4 ك", "price": 180 },
+            { "name": "1/8 ك", "price": 90 }
+          ]
+        },
+        {
+          "name": "طرب بلدي",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 740 },
+            { "name": "1/2 ك", "price": 370 },
+            { "name": "1/4 ك", "price": 185 },
+            { "name": "1/8 ك", "price": 90 }
+          ]
+        },
+        {
+          "name": "كفته مبطط",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 720 },
+            { "name": "1/2 ك", "price": 360 },
+            { "name": "1/4 ك", "price": 180 },
+            { "name": "1/8 ك", "price": 90 }
+          ]
+        },
+        {
+          "name": "سجق بلدي",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 720 },
+            { "name": "1/2 ك", "price": 360 },
+            { "name": "1/4 ك", "price": 180 },
+            { "name": "1/8 ك", "price": 90 }
+          ]
+        },
+        {
+          "name": "كباب ستيك",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 980 },
+            { "name": "1/2 ك", "price": 495 },
+            { "name": "1/4 ك", "price": 250 },
+            { "name": "1/8 ك", "price": 125 }
+          ]
+        },
+        {
+          "name": "كباب ضاني",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 1000 },
+            { "name": "1/2 ك", "price": 500 },
+            { "name": "1/4 ك", "price": 250 },
+            { "name": "1/8 ك", "price": 130 }
+          ]
+        },
+        {
+          "name": "ريش ضاني صافي",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 1300 },
+            { "name": "1/2 ك", "price": 650 },
+            { "name": "1/4 ك", "price": 325 }
+          ]
+        },
+        {
+          "name": "شيش طاووق مخلى",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 500 },
+            { "name": "1/2 ك", "price": 250 },
+            { "name": "1/4 ك", "price": 125 },
+            { "name": "1/8 ك", "price": 70 }
+          ]
+        },
+        {
+          "name": "فرخة شيش فحم",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "كاملة", "price": 420 },
+            { "name": "1/2", "price": 220 },
+            { "name": "1/4", "price": 120 }
+          ]
+        },
+        {
+          "name": "فرخة تكا",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "كاملة", "price": 420 },
+            { "name": "1/2", "price": 220 },
+            { "name": "1/4", "price": 120 }
+          ]
+        },
+        {
+          "name": "كبده ضاني",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 900 },
+            { "name": "1/2 ك", "price": 450 },
+            { "name": "1/4 ك", "price": 225 },
+            { "name": "1/8 ك", "price": 115 }
+          ]
+        },
+        {
+          "name": "قلب وكلاوى - مخاصي",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 900 },
+            { "name": "1/2 ك", "price": 450 },
+            { "name": "1/4 ك", "price": 225 },
+            { "name": "1/8 ك", "price": 115 }
+          ]
+        },
+        {
+          "name": "فرد حمام محشي أرز",
+          "description": null,
+          "price": 195,
+          "variants": []
+        },
+        {
+          "name": "مشكل",
+          "description": null,
+          "price": null,
+          "variants": [
+            { "name": "1 ك", "price": 860 },
+            { "name": "1/2 ك", "price": 430 },
+            { "name": "1/4 ك", "price": 220 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "الجريل",
+      "description": null,
+      "items": [
+        { "name": "ورقة كبده 1/4 ك", "price": 240, "variants": [] },
+        { "name": "ورقة سجق 1/4 ك", "price": 195, "variants": [] },
+        { "name": "ورقة لحمة 1/4 ك", "price": 245, "variants": [] },
+        { "name": "ورقة شيش 1/4 ك", "price": 160, "variants": [] }
+      ]
+    },
+    {
+      "name": "الصواني",
+      "description": null,
+      "items": [
+        {
+          "name": "صينية شعبان (تكفي 8 أفراد)",
+          "description": "فرخة شيش فحم + 1/4 ك كفته + 1/4 ك طرب + 1/4 ك ريش + 1/4 سجق + 1/4 ك كفته مبطط + 1/4 كبده مشوى + 1/4 شيش طاووق + أرز بسمتي + 1/4 محشي + 1/4 ممبار",
+          "price": 2400,
+          "variants": []
+        },
+        {
+          "name": "صينية ليلة العمر",
+          "description": "4 حمام + 1 ك كفته + 1/2 ك سجق + 1/2 ك استيك + 1/4 ك طرب + 1/2 ممبار + 1/2 شيش طاووق + أرز بسمتي",
+          "price": 2600,
+          "variants": []
+        },
+        {
+          "name": "صينية مشكل",
+          "description": "1/2 ك كفته + 1/2 ك كباب + 1/4 سجق + 1/2 شيش طاووق + 1/4 كبده + 1/2 ممبار + 1/2 محشي + أرز بسمتي",
+          "price": 1300,
+          "variants": []
+        },
+        {
+          "name": "صينية شهر الخير",
+          "description": "فرخة شيش فحم + 1/2 ك كفته + 1/4 ك كباب + 1/4 سجق + 1/4 ممبار + 1/4 محشي + أرز بسمتي",
+          "price": 1750,
+          "variants": []
+        },
+        {
+          "name": "صينية الصحاب",
+          "description": "1/4 كباب + 1/2 ك كفته + 1/2 ك طرب + 1/2 فرخة + 1/2 سجق + 1/2 ممبار + أرز بسمتي",
+          "price": 1200,
+          "variants": []
+        },
+        {
+          "name": "صينية الوليمة",
+          "description": "فرخة شيش فحم + 1/2 ك كفته + 1/4 كباب + 1/4 طرب + 1/4 شيش طاووق + 1/4 ممبار + 1/4 محشي + أرز بسمتي",
+          "price": 2200,
+          "variants": []
+        },
+        {
+          "name": "صينية ميكس مشويات شعبان",
+          "description": "4 حمام + 1/2 ك كفته + 1/2 طرب + 1/2 كباب + فرخة + 1/2 سجق + 1/2 ممبار + 1/2 محشي + أرز بسمتي",
+          "price": 3050,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "name": "الموزة",
+      "items": [
+        { "name": "موزة على الفحم", "price": 380, "variants": [] },
+        { "name": "موزة تركي", "price": 400, "variants": [] }
+      ]
+    },
+    {
+      "name": "السمبوسك",
+      "items": [
+        { "name": "سمبوسك جبنة", "price": null, "variants": [{ "name": "1/4", "price": 100 }] },
+        { "name": "سمبوسك لحمة", "price": null, "variants": [{ "name": "1/4", "price": 120 }] },
+        { "name": "سمبوسك مشكل", "price": null, "variants": [{ "name": "1/4", "price": 100 }] }
+      ]
+    },
+    {
+      "name": "الحواوشي",
+      "items": [
+        { "name": "حواوشي عادي", "price": 50, "variants": [] },
+        { "name": "حواوشي مخصوص", "price": 90, "variants": [] }
+      ]
+    },
+    {
+      "name": "السندوتشات",
+      "items": [
+        { "name": "سندوتش كفته", "price": 65, "variants": [] },
+        { "name": "سندوتش كباب", "price": 120, "variants": [] },
+        { "name": "سندوتش طرب", "price": 100, "variants": [] },
+        { "name": "سندوتش سجق", "price": 100, "variants": [] },
+        { "name": "سندوتش شيش", "price": 80, "variants": [] },
+        { "name": "سندوتش مشكل", "price": 120, "variants": [] },
+        { "name": "سندوتش كبده جريل مشوى", "price": 120, "variants": [] }
+      ]
+    },
+    {
+      "name": "المطبخ",
+      "items": [
+        { "name": "طاجن لسان عصفور", "price": 20, "variants": [] },
+        { "name": "بطاطس محمرة", "price": 45, "variants": [] },
+        { "name": "أرز بالشعرية", "price": 45, "variants": [] },
+        { "name": "أرز بالكبدة", "price": 145, "variants": [] },
+        { "name": "أرز بالسجق", "price": 135, "variants": [] }
+      ]
+    },
+    {
+      "name": "المكرونات",
+      "items": [
+        { "name": "مكرونة بالسجق", "price": 135, "variants": [] },
+        { "name": "مكرونة بالكبدة", "price": 145, "variants": [] },
+        { "name": "مكرونة لحمة مفرومة", "price": 140, "variants": [] },
+        { "name": "مكرونة سادة", "price": 45, "variants": [] },
+        { "name": "مكرونة شيش طاووق", "price": 135, "variants": [] },
+        { "name": "مكرونة بشاميل باللحمة المفرومة", "price": 130, "variants": [] }
+      ]
+    },
+    {
+      "name": "الطواجن",
+      "description": "جميع الطواجن باللحمة البلدى. وزن اللحمة في الطاجن 1/4 ك.",
+      "items": [
+        { "name": "طاجن لحمة بالبصل", "price": 360, "variants": [] },
+        { "name": "طاجن بطاطس باللحمة", "price": 260, "variants": [] },
+        { "name": "طاجن باميه باللحمة", "price": 260, "variants": [] },
+        { "name": "طاجن ملوخية", "price": 45, "variants": [] },
+        { "name": "طاجن كوارع بورق العنب", "price": 300, "variants": [] },
+        { "name": "طاجن خضار مشكل باللحمة", "price": 260, "variants": [] },
+        { "name": "طاجن عكاوي", "price": 320, "variants": [] },
+        { "name": "طاجن فريك", "price": 260, "variants": [] }
+      ]
+    },
+    {
+      "name": "الممبار",
+      "items": [
+        {
+          "name": "ممبار",
+          "price": null,
+          "variants": [
+            { "name": "1ك", "price": 400 },
+            { "name": "1/2ك", "price": 200 },
+            { "name": "1/4ك", "price": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "المحاشي",
+      "items": [
+        {
+          "name": "ورق عنب",
+          "price": null,
+          "variants": [
+            { "name": "1ك", "price": 350 },
+            { "name": "1/2ك", "price": 175 },
+            { "name": "1/4ك", "price": 95 }
+          ]
+        },
+        {
+          "name": "محشي مشكل",
+          "price": null,
+          "variants": [
+            { "name": "1ك", "price": 380 },
+            { "name": "1/2ك", "price": 190 },
+            { "name": "1/4ك", "price": 95 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "السلطات",
+      "items": [
+        { "name": "سلطة خضراء", "price": 10, "variants": [] },
+        { "name": "سلطة طحينة", "price": 10, "variants": [] },
+        { "name": "باذنجان / مخلل", "price": 10, "variants": [] },
+        { "name": "بطاطس مخلل", "price": 10, "variants": [] },
+        { "name": "طماطم متبلة", "price": 10, "variants": [] },
+        { "name": "سلطة بابا غنوج", "price": 10, "variants": [] },
+        { "name": "سلطة جبنة متبلة", "price": 15, "variants": [] }
+      ]
+    },
+    {
+      "name": "المشروبات",
+      "items": [
+        { "name": "مياه معدنية", "price": 10, "variants": [] },
+        { "name": "بيبسي", "price": 15, "variants": [] },
+        { "name": "شاي", "price": 25, "variants": [] },
+        { "name": "قهوة", "price": 25, "variants": [] }
+      ]
+    }
+  ]
+}

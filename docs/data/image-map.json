@@ -1,0 +1,66 @@
+{
+  "notes": [
+    "Original dump: /imgs (Telegram filenames). 10 files, 7 unique, 3 exact duplicates skipped.",
+    "These are plated meals (rice + tahini + salad), not isolated SKU shots. Mapping is closest menu item.",
+    "Every other product still uses placeholder-product.svg until Nada adds a photo."
+  ],
+  "duplicatesSkipped": [
+    "photo_2026-09-08_16-06-21.jpg = 16-06-18",
+    "photo_2026-09-08_16-07-07.jpg = 16-06-43",
+    "photo_2026-09-08_16-07-11.jpg = 16-06-54"
+  ],
+  "hero": {
+    "file": "docs/brand/assets/banners/hero-grill.jpg",
+    "source": "imgs/photo_2026-09-08_16-06-43.jpg",
+    "why": "Full table: chicken, kofta, rice, salad, tahini, drink — best homepage hero"
+  },
+  "banners": [
+    {
+      "file": "docs/brand/assets/banners/hero-grill.jpg",
+      "link": "/menu",
+      "title": { "ar": "مشويات على الفحم", "en": "Charcoal grills" }
+    }
+  ],
+  "products": {
+    "prd_mixed-grill": {
+      "file": "docs/brand/assets/products/mixed-grill.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-18.jpg",
+      "seenInPhoto": "Kofta + grilled steak/beef on yellow rice"
+    },
+    "prd_steak-kabab": {
+      "file": "docs/brand/assets/products/mixed-grill.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-18.jpg",
+      "seenInPhoto": "Same plate — steak pieces visible. Temporary until a steak-only photo exists."
+    },
+    "prd_baladi-kofta": {
+      "file": "docs/brand/assets/products/chicken-kofta.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-26.jpg",
+      "seenInPhoto": "Kofta skewers with chicken on rice"
+    },
+    "prd_charcoal-shish-chicken": {
+      "file": "docs/brand/assets/products/charcoal-shish-chicken.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-51.jpg",
+      "seenInPhoto": "Charcoal chicken pieces on yellow rice"
+    },
+    "prd_chicken-tikka": {
+      "file": "docs/brand/assets/products/chicken-tikka.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-54.jpg",
+      "seenInPhoto": "Grilled chicken on rice with chili garnish"
+    },
+    "prd_stuffed-pigeon-with-rice": {
+      "file": "docs/brand/assets/products/stuffed-pigeon.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-59.jpg",
+      "seenInPhoto": "Whole stuffed pigeon (حمام) + kofta on rice"
+    },
+    "prd_friends-platter": {
+      "file": "docs/brand/assets/products/friends-platter.jpg",
+      "source": "imgs/photo_2026-09-08_16-07-02.jpg",
+      "seenInPhoto": "Chicken + kofta meal set (closest to صينية الصحاب)"
+    },
+    "prd_mixed-platter": {
+      "file": "docs/brand/assets/products/chicken-kofta.jpg",
+      "source": "imgs/photo_2026-09-08_16-06-26.jpg",
+      "seenInPhoto": "Chicken + kofta — closest to صينية مشكل until a dedicated platter photo exists"
+    }
+  }
+}

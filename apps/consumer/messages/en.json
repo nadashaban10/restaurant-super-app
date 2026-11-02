@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content"
+  },
+  "cta": {
+    "orderNow": "Order now",
+    "viewMenu": "View menu",
+    "add": "Add to cart",
+    "adding": "Adding…",
+    "addToOrder": "Add to order",
+    "callUs": "Call us",
+    "moreSizes": "More sizes",
+    "chooseOptions": "Choose options",
+    "seeAll": "See all"
+  },
+  "home": {
+    "featured": "Popular dishes",
+    "categories": "Categories",
+    "categoriesHint": "Browse by menu section",
+    "items": "items",
+    "categoryBrowse": "{count} dishes in this section",
+    "viewCategory": "Browse category",
+    "hours": "Open 24 hours",
+    "location": "El Sawah, El Amerya, Cairo",
+    "since": "Since {year}",
+    "sinceLabel": "Since",
+    "offers": "Today's offers",
+    "offersHint": "Discounts on selected dishes",
+    "percentOff": "{percent}% off",
+    "orderOffer": "Order this offer"
+  },
+  "product": {
+    "portion": "Portion",
+    "soldOut": "Sold out",
+    "quantity": "Quantity",
+    "decreaseQty": "Decrease quantity",
+    "increaseQty": "Increase quantity",
+    "options": "options",
+    "sale": "Sale"
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "empty": "Save dishes you love.",
+    "emptyCta": "Browse the menu",
+    "add": "Add to wishlist",
+    "remove": "Remove from wishlist"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty.",
+    "emptyCta": "Browse the menu",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "summary": "Order summary",
+    "total": "Total",
+    "remove": "Remove",
+    "calculating": "Calculating total…",
+    "staticNote": "Prices come from the approved menu. Checkout will be enabled after the API is connected."
+  },
+  "footer": {
+    "tagline": "A history of the skewer",
+    "address": "El Sawah, El Amerya, Cairo",
+    "hours": "Open 24 hours",
+    "contact": "Contact",
+    "social": "Social",
+    "complaints": "Complaints",
+    "pricesIn": "Prices in EGP",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "whatsapp": "WhatsApp",
+    "comingSoon": "Coming soon"
+  },
+  "toast": {
+    "added": "The product has been added to your cart successfully",
+    "updated": "Your cart has been updated successfully",
+    "removed": "The item has been removed from your cart",
+    "error": "The action could not be completed. Please try again.",
+    "selectOption": "Please select a portion size before adding to cart"
+  },
+  "notFound": {
+    "title": "Dish not found",
+    "back": "Back to menu"
+  }
+}

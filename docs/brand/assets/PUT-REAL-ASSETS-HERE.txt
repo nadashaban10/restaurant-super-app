@@ -1,0 +1,8 @@
+Official logo:            logo.jpg
+Product photos:           products/*.jpg  (mapped in docs/data/image-map.json)
+Hero/banner:              banners/hero-grill.jpg
+Empty product:            placeholder-product.svg
+Empty banner:             placeholder-banner.svg
+
+Original camera dump stays in /imgs (includes 3 duplicate files).
+Add more photos later — tell the PO which menu item each file is.

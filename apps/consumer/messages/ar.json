@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "menu": "المنيو",
+    "wishlist": "المفضلة",
+    "cart": "السلة",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "skipToContent": "تخطي إلى المحتوى"
+  },
+  "cta": {
+    "orderNow": "اطلب دلوقتي",
+    "viewMenu": "شوف المنيو",
+    "add": "أضف للسلة",
+    "adding": "جاري الإضافة…",
+    "addToOrder": "أضف للطلب",
+    "callUs": "كلمنا",
+    "moreSizes": "أحجام تانية",
+    "chooseOptions": "اختار الحجم",
+    "seeAll": "شوف الكل"
+  },
+  "home": {
+    "featured": "الأكثر طلبًا",
+    "categories": "الأقسام",
+    "categoriesHint": "تصفّح حسب نوع الأكل",
+    "items": "صنف",
+    "categoryBrowse": "{count} أصناف في هذا القسم",
+    "viewCategory": "عرض القسم",
+    "hours": "مفتوح 24 ساعة",
+    "location": "السواح، الأميرية، القاهرة",
+    "since": "منذ {year}",
+    "sinceLabel": "منذ",
+    "offers": "عروض النهاردة",
+    "offersHint": "خصومات على أصناف مختارة",
+    "percentOff": "خصم {percent}٪",
+    "orderOffer": "اطلب العرض"
+  },
+  "product": {
+    "portion": "الحجم",
+    "soldOut": "غير متاح",
+    "quantity": "الكمية",
+    "decreaseQty": "تقليل الكمية",
+    "increaseQty": "زيادة الكمية",
+    "options": "خيارات",
+    "sale": "خصم"
+  },
+  "wishlist": {
+    "title": "المفضلة",
+    "empty": "لسه ما حفظتش أطباق.",
+    "emptyCta": "شوف المنيو",
+    "add": "أضف للمفضلة",
+    "remove": "شيل من المفضلة"
+  },
+  "cart": {
+    "title": "السلة",
+    "empty": "السلة فاضية.",
+    "emptyCta": "اطلب من المنيو",
+    "subtotal": "المجموع",
+    "delivery": "التوصيل",
+    "summary": "ملخص الطلب",
+    "total": "الإجمالي",
+    "remove": "حذف",
+    "calculating": "جاري حساب الإجمالي…",
+    "staticNote": "الأسعار من المنيو المعتمد. الدفع والطلب هيتفعّلوا بعد ربط السيرفر."
+  },
+  "footer": {
+    "tagline": "للسيخ .... تاريخ",
+    "address": "السواح، الأميريه، القاهرة",
+    "hours": "مفتوح 24 ساعة",
+    "contact": "تواصل",
+    "social": "السوشيال",
+    "complaints": "شكاوى",
+    "pricesIn": "الأسعار بالجنيه المصري",
+    "facebook": "فيسبوك",
+    "instagram": "إنستجرام",
+    "tiktok": "تيك توك",
+    "whatsapp": "واتساب",
+    "comingSoon": "قريبًا"
+  },
+  "toast": {
+    "added": "تمت إضافة المنتج إلى السلة بنجاح",
+    "updated": "تم تحديث السلة بنجاح",
+    "removed": "تم حذف المنتج من السلة",
+    "error": "تعذّر إتمام العملية. يُرجى المحاولة مرة أخرى.",
+    "selectOption": "يُرجى اختيار الحجم قبل الإضافة إلى السلة"
+  },
+  "notFound": {
+    "title": "الطبق مش موجود",
+    "back": "ارجع للمنيو"
+  }
+}
