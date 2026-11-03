@@ -10,7 +10,6 @@ const copy = {
     name: "الاسم",
     phone: "الموبايل",
     whatsapp: "واتساب",
-    email: "الإيميل",
     district: "المنطقة",
     address: "العنوان",
     notes: "ملاحظات",
@@ -26,7 +25,6 @@ const copy = {
     name: "Name",
     phone: "Phone",
     whatsapp: "WhatsApp",
-    email: "Email",
     district: "District",
     address: "Address",
     notes: "Notes",
@@ -68,7 +66,6 @@ export function buildOrderMessage(
   ];
 
   if (order.whatsapp) parts.push(line(t.whatsapp, formatEgyptianMobile(order.whatsapp)));
-  parts.push(line(t.email, order.email));
   parts.push(line(t.district, order.district));
   parts.push(line(t.address, order.address));
   if (order.notes) parts.push(line(t.notes, order.notes));

@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { ProductImage } from "@/components/product/product-image";
 import { Spinner } from "@/components/ui/spinner";
 import { getCategories } from "@/lib/catalog/catalog";
-import { recommendAddonGroups, recommendAddonPicks, recommendForProducts } from "@/lib/recommendations/recommend";
+import { recommendAddonGroups, recommendAddonPicks } from "@/lib/recommendations/recommend";
 import type { AddonGroupId } from "@/lib/recommendations/rules";
 import { formatMoney, getDefaultVariant, localizedText, priceVariant } from "@/lib/catalog/pricing";
 import type { Product } from "@/lib/catalog/schema";
@@ -20,16 +20,6 @@ function useAnchorKeys(productIds: string[]) {
   const anchorKey = productIds.join("|");
   const excludeKey = items.map((item) => item.productId).join("|");
   return { anchorKey, excludeKey };
-}
-
-export function useRecommendations(productIds: string[], limit: number): Product[] {
-  const { anchorKey, excludeKey } = useAnchorKeys(productIds);
-
-  return useMemo(() => {
-    if (!anchorKey || limit < 1) return [];
-    const exclude = excludeKey ? excludeKey.split("|") : [];
-    return recommendForProducts(anchorKey.split("|"), exclude, limit);
-  }, [anchorKey, excludeKey, limit]);
 }
 
 export function useAddonPicks(productIds: string[], groupIds: readonly AddonGroupId[], limit: number): Product[] {
@@ -67,14 +57,12 @@ export function MealSuggestions({
   title: string;
   hint?: string;
   limit: number;
-  groups?: readonly AddonGroupId[];
+  groups: readonly AddonGroupId[];
   compact?: boolean;
   action?: ReactNode;
   className?: string;
 }) {
-  const recommended = useRecommendations(productIds, groups ? 0 : limit);
-  const picks = useAddonPicks(productIds, groups ?? [], groups ? limit : 0);
-  const products = groups ? picks : recommended;
+  const products = useAddonPicks(productIds, groups, limit);
   if (products.length === 0) return null;
 
   return (

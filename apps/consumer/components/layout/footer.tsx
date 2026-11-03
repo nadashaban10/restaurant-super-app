@@ -92,7 +92,12 @@ export async function Footer() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366]/20 text-[#25D366]">
                     <IconWhatsApp />
                   </span>
-                  <span className="text-sm font-semibold">{t("whatsapp")}</span>
+                  <span className="text-sm font-semibold">
+                    {t("whatsapp")}
+                    <span className="ms-2 font-medium text-white/70" dir="ltr">
+                      {phones.whatsapp.displayAr}
+                    </span>
+                  </span>
                 </a>
               </li>
             ) : null}

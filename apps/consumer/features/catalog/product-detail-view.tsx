@@ -17,6 +17,7 @@ import {
 } from "@/lib/catalog/pricing";
 import type { AppLocale } from "@/i18n/routing";
 import { Spinner } from "@/components/ui/spinner";
+import { QuantityStepper } from "@/components/ui/quantity-stepper";
 import { IconHeart } from "@/components/ui/icons";
 import { briefActionDelay } from "@/lib/ui";
 import { AddonGroupRows } from "@/features/recommendations/meal-suggestions";
@@ -128,28 +129,15 @@ export function ProductDetailView({ product }: { product: Product }) {
           ) : null}
         </p>
 
-        <div className="inline-flex items-center gap-2 rounded-2xl border border-[var(--border)] bg-white p-1 shadow-sm">
-          <span className="sr-only">{t("product.quantity")}</span>
-          <button
-            type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-xl text-xl transition hover:bg-[var(--page-bg)]"
-            aria-label={t("product.decreaseQty")}
-            onClick={() => setQty((n) => Math.max(1, n - 1))}
-          >
-            −
-          </button>
-          <span className="min-w-10 text-center font-extrabold tabular-nums" aria-live="polite">
-            {qty}
-          </span>
-          <button
-            type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-xl text-xl transition hover:bg-[var(--page-bg)]"
-            aria-label={t("product.increaseQty")}
-            onClick={() => setQty((n) => Math.min(99, n + 1))}
-          >
-            +
-          </button>
-        </div>
+        <QuantityStepper
+          appearance="outline"
+          quantity={qty}
+          label={t("product.quantity")}
+          decreaseLabel={t("product.decreaseQty")}
+          increaseLabel={t("product.increaseQty")}
+          onDecrease={() => setQty((n) => Math.max(1, n - 1))}
+          onIncrease={() => setQty((n) => Math.min(99, n + 1))}
+        />
 
         <button
           type="button"

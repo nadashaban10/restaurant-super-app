@@ -3,7 +3,6 @@ import { normalizeEgyptianMobile } from "./phone";
 export const checkoutFields = [
   "fullName",
   "phone",
-  "email",
   "district",
   "address",
   "whatsapp",
@@ -19,14 +18,11 @@ export type CheckoutErrors = Partial<Record<CheckoutField, true>>;
 export type NormalizedOrder = {
   fullName: string;
   phone: string;
-  email: string;
   district: string;
   address: string;
   whatsapp: string | null;
   notes: string | null;
 };
-
-const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
 function collapse(value: string): string {
   return value.trim().replace(/\s+/g, " ");
@@ -42,9 +38,6 @@ export function validateCheckout(
 
   const phone = normalizeEgyptianMobile(input.phone);
   if (!phone) errors.phone = true;
-
-  const email = input.email.trim().toLowerCase();
-  if (email.length > 120 || !EMAIL.test(email)) errors.email = true;
 
   const district = collapse(input.district);
   if (district.length < 2 || district.length > 80) errors.district = true;
@@ -69,7 +62,6 @@ export function validateCheckout(
     data: {
       fullName,
       phone: phone as string,
-      email,
       district,
       address,
       whatsapp,

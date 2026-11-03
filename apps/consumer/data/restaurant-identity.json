@@ -95,6 +95,12 @@
         "e164": "+201101421344",
         "displayAr": "011 0142 1344",
         "role": "complaints"
+      },
+      "whatsapp": {
+        "raw": "01101421344",
+        "e164": "+201101421344",
+        "displayAr": "011 0142 1344",
+        "role": "orders"
       }
     },
     "geo": null

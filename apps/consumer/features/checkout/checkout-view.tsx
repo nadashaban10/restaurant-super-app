@@ -1,6 +1,6 @@
 "use client";
 
-import { cloneElement, isValidElement, useState, type ReactElement, type ReactNode } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -17,6 +17,8 @@ import { OrderTotals } from "@/features/order/order-totals";
 import { MealSuggestions } from "@/features/recommendations/meal-suggestions";
 import { checkoutAddonGroups, recommendationLimits } from "@/lib/recommendations/rules";
 import { IconCart, IconWhatsApp } from "@/components/ui/icons";
+import { EmptyState } from "@/components/shared/empty-state";
+import { CheckoutField as Field } from "@/features/checkout/checkout-field";
 import { Spinner } from "@/components/ui/spinner";
 import { CheckoutSkeleton } from "@/components/ui/skeletons";
 import { usePersistHydrated } from "@/hooks/use-persist-hydrated";
@@ -51,19 +53,19 @@ export function CheckoutView() {
 
   if (!items.length) {
     return (
-      <div className="mx-auto max-w-xl px-4 py-20 text-center">
-        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-[var(--border)] bg-white text-[var(--brand-red)] shadow-[var(--shadow-sm)]">
-          <IconCart size={28} />
-        </div>
-        <h1 className="mb-3 text-3xl font-extrabold">{t("checkout.title")}</h1>
-        <p className="mb-8 text-[var(--muted)]">{t("checkout.empty")}</p>
-        <Link
-          href="/menu"
-          className="ks-pressable inline-flex min-h-12 items-center rounded-xl bg-[var(--brand-red)] px-6 font-bold text-white shadow-sm transition hover:bg-[var(--brand-red-hover)]"
-        >
-          {t("checkout.emptyCta")}
-        </Link>
-      </div>
+      <EmptyState
+        icon={<IconCart size={28} />}
+        title={t("checkout.title")}
+        message={t("checkout.empty")}
+        action={
+          <Link
+            href="/menu"
+            className="ks-pressable inline-flex min-h-12 items-center rounded-xl bg-[var(--brand-red)] px-6 font-bold text-white shadow-sm transition hover:bg-[var(--brand-red-hover)]"
+          >
+            {t("checkout.emptyCta")}
+          </Link>
+        }
+      />
     );
   }
 
@@ -197,27 +199,6 @@ export function CheckoutView() {
                 aria-invalid={errors.phone || undefined}
                 onChange={(event) => update("phone", event.target.value)}
                 className={`${inputClass} min-h-12 text-left ${errors.phone ? "border-[var(--danger)]" : "border-[var(--border)]"}`}
-              />
-            </Field>
-
-            <Field
-              id="checkout-email"
-              label={t("checkout.email")}
-              required
-              error={errors.email ? t("checkout.errors.email") : undefined}
-            >
-              <input
-                id="checkout-email"
-                name="email"
-                type="email"
-                inputMode="email"
-                autoComplete="email"
-                dir="ltr"
-                value={draft.email}
-                placeholder={t("checkout.emailPlaceholder")}
-                aria-invalid={errors.email || undefined}
-                onChange={(event) => update("email", event.target.value)}
-                className={`${inputClass} min-h-12 text-left ${errors.email ? "border-[var(--danger)]" : "border-[var(--border)]"}`}
               />
             </Field>
 
@@ -419,60 +400,5 @@ export function CheckoutView() {
         </div>
       ) : null}
     </form>
-  );
-}
-
-function Field({
-  id,
-  label,
-  required = false,
-  optionalLabel,
-  hint,
-  error,
-  children,
-}: {
-  id: string;
-  label: string;
-  required?: boolean;
-  optionalLabel?: string;
-  hint?: string;
-  error?: string;
-  children: ReactNode;
-}) {
-  const hintId = hint ? `${id}-hint` : undefined;
-  const errorId = error ? `${id}-error` : undefined;
-  const describedBy = [hintId, errorId].filter(Boolean).join(" ") || undefined;
-  const control = isValidElement(children)
-    ? cloneElement(children as ReactElement<{ "aria-describedby"?: string; "aria-required"?: boolean }>, {
-        "aria-describedby": describedBy,
-        "aria-required": required || undefined,
-      })
-    : children;
-
-  return (
-    <div>
-      <label htmlFor={id} className="mb-1.5 flex items-baseline justify-between gap-3">
-        <span className="text-sm font-bold">
-          {label}
-          {required ? (
-            <span className="ms-1 text-[var(--brand-red)]" aria-hidden>
-              *
-            </span>
-          ) : null}
-        </span>
-        {optionalLabel ? <span className="text-xs font-medium text-[var(--muted)]">{optionalLabel}</span> : null}
-      </label>
-      {hint ? (
-        <p id={hintId} className="mb-1.5 text-sm text-[var(--muted)]">
-          {hint}
-        </p>
-      ) : null}
-      {control}
-      {error ? (
-        <p id={errorId} className="mt-1.5 text-sm font-medium text-[var(--danger)]" role="alert">
-          {error}
-        </p>
-      ) : null}
-    </div>
   );
 }

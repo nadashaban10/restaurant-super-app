@@ -190,6 +190,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
           >
             <QuantityStepper
               quantity={cartQty}
+              label={t("product.quantity")}
               onDecrease={decrease}
               onIncrease={increase}
               decreaseLabel={t("product.decreaseQty")}

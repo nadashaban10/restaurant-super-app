@@ -5,7 +5,6 @@ import type { CheckoutInput } from "@/lib/checkout/validate";
 export const emptyCheckoutDraft: CheckoutInput = {
   fullName: "",
   phone: "",
-  email: "",
   district: "",
   address: "",
   whatsapp: "",

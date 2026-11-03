@@ -9,6 +9,8 @@ import { useToastStore } from "@/stores/toast-store";
 import { quoteCart } from "@/lib/catalog/catalog";
 import { formatMoney, localizedText } from "@/lib/catalog/pricing";
 import { ProductImage } from "@/components/product/product-image";
+import { EmptyState } from "@/components/shared/empty-state";
+import { QuantityStepper } from "@/components/ui/quantity-stepper";
 import type { AppLocale } from "@/i18n/routing";
 import { Spinner } from "@/components/ui/spinner";
 import { CartSkeleton } from "@/components/ui/skeletons";
@@ -52,19 +54,19 @@ export function CartView() {
 
   if (!items.length) {
     return (
-      <div className="mx-auto max-w-xl px-4 py-20 text-center">
-        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-[var(--border)] bg-white text-[var(--brand-red)] shadow-[var(--shadow-sm)]">
-          <IconCart size={28} />
-        </div>
-        <h1 className="mb-3 text-3xl font-extrabold">{t("cart.title")}</h1>
-        <p className="mb-8 text-[var(--muted)]">{t("cart.empty")}</p>
-        <Link
-          href="/menu"
-          className="ks-pressable inline-flex min-h-12 items-center rounded-xl bg-[var(--brand-red)] px-6 font-bold text-white shadow-sm transition hover:bg-[var(--brand-red-hover)]"
-        >
-          {t("cart.emptyCta")}
-        </Link>
-      </div>
+      <EmptyState
+        icon={<IconCart size={28} />}
+        title={t("cart.title")}
+        message={t("cart.empty")}
+        action={
+          <Link
+            href="/menu"
+            className="ks-pressable inline-flex min-h-12 items-center rounded-xl bg-[var(--brand-red)] px-6 font-bold text-white shadow-sm transition hover:bg-[var(--brand-red-hover)]"
+          >
+            {t("cart.emptyCta")}
+          </Link>
+        }
+      />
     );
   }
 
@@ -112,41 +114,29 @@ export function CartView() {
                   )}
                   <div className="mt-3 flex flex-wrap items-center gap-2">
                     {line.isAvailable ? (
-                      <div className="inline-flex items-center gap-1 rounded-xl bg-[var(--page-bg)] p-1">
-                        <button
-                          type="button"
-                          className="flex h-11 w-11 items-center justify-center rounded-lg text-lg disabled:opacity-50"
-                          aria-label={t("product.decreaseQty")}
-                          disabled={!!busyKey}
-                          onClick={() =>
-                            void withBusy(
-                              `${key}:dec`,
-                              () => setQuantity(line.productId, line.variantId, line.quantity - 1),
-                              line.quantity - 1 < 1 ? t("toast.removed") : t("toast.updated"),
-                            )
-                          }
-                        >
-                          −
-                        </button>
-                        <span className="min-w-8 text-center font-extrabold tabular-nums">
-                          {qtyBusy ? <Spinner className="mx-auto h-4 w-4" /> : line.quantity}
-                        </span>
-                        <button
-                          type="button"
-                          className="flex h-11 w-11 items-center justify-center rounded-lg text-lg disabled:opacity-50"
-                          aria-label={t("product.increaseQty")}
-                          disabled={!!busyKey || line.quantity >= 99}
-                          onClick={() =>
-                            void withBusy(
-                              `${key}:inc`,
-                              () => setQuantity(line.productId, line.variantId, line.quantity + 1),
-                              t("toast.updated"),
-                            )
-                          }
-                        >
-                          +
-                        </button>
-                      </div>
+                      <QuantityStepper
+                        appearance="quiet"
+                        quantity={line.quantity}
+                        label={t("product.quantity")}
+                        decreaseLabel={t("product.decreaseQty")}
+                        increaseLabel={t("product.increaseQty")}
+                        disabled={!!busyKey}
+                        busy={qtyBusy}
+                        onDecrease={() =>
+                          void withBusy(
+                            `${key}:dec`,
+                            () => setQuantity(line.productId, line.variantId, line.quantity - 1),
+                            line.quantity - 1 < 1 ? t("toast.removed") : t("toast.updated"),
+                          )
+                        }
+                        onIncrease={() =>
+                          void withBusy(
+                            `${key}:inc`,
+                            () => setQuantity(line.productId, line.variantId, line.quantity + 1),
+                            t("toast.updated"),
+                          )
+                        }
+                      />
                     ) : null}
                     <button
                       type="button"
