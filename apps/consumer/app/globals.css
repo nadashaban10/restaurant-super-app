@@ -76,6 +76,17 @@ a {
   }
 }
 
+@keyframes ks-sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes ks-spin {
   to {
     transform: rotate(360deg);
@@ -97,6 +108,10 @@ a {
 
 .ks-toast-in {
   animation: ks-toast-in 0.28s ease-out both;
+}
+
+.ks-sheet-in {
+  animation: ks-sheet-in 0.28s ease-out both;
 }
 
 .ks-spin {

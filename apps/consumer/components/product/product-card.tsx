@@ -4,6 +4,7 @@ import { useEffect, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useCartStore } from "@/stores/cart-store";
+import { useSuggestionStore } from "@/stores/suggestion-store";
 import { useWishlistStore } from "@/stores/wishlist-store";
 import { useToastStore } from "@/stores/toast-store";
 import type { Product } from "@/lib/catalog/schema";
@@ -28,8 +29,10 @@ export function ProductCard({ product, priority = false }: { product: Product; p
   const price = priceVariant(product, variant);
   const multiple = hasMultipleVariants(product);
   const title = localizedText(product.title, locale);
-  const description = localizedText(product.description, locale);
+  const description =
+    product.description[locale] || product.description.ar || product.description.en;
   const addItem = useCartStore((s) => s.addItem);
+  const suggest = useSuggestionStore((s) => s.suggest);
   const setQuantity = useCartStore((s) => s.setQuantity);
   const cartQty = useCartStore(
     (s) =>
@@ -41,6 +44,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
   const showToast = useToastStore((s) => s.show);
   const [hydrated, setHydrated] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [wishBusy, setWishBusy] = useState(false);
   const [, startTransition] = useTransition();
 
   useEffect(() => setHydrated(true), []);
@@ -62,7 +66,10 @@ export function ProductCard({ product, priority = false }: { product: Product; p
   function addDefault(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    void runCartAction(() => addItem(product.id, variant.id, 1), t("toast.added"));
+    void runCartAction(() => {
+      addItem(product.id, variant.id, 1);
+      suggest(product.id);
+    }, t("toast.added"));
   }
 
   function increase() {
@@ -80,10 +87,17 @@ export function ProductCard({ product, priority = false }: { product: Product; p
     );
   }
 
-  function onWish(e: React.MouseEvent) {
+  async function onWish(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    toggleWish(product.id);
+    if (wishBusy) return;
+    setWishBusy(true);
+    try {
+      await briefActionDelay(180);
+      toggleWish(product.id);
+    } finally {
+      setWishBusy(false);
+    }
   }
 
   return (
@@ -128,8 +142,9 @@ export function ProductCard({ product, priority = false }: { product: Product; p
           className="absolute top-3 end-3 flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-[var(--brand-red)] shadow-sm transition hover:scale-105"
           aria-label={hydrated && wishHas ? t("wishlist.remove") : t("wishlist.add")}
           aria-pressed={hydrated && wishHas}
+          disabled={wishBusy}
         >
-          <IconHeart filled={hydrated && wishHas} />
+          {wishBusy ? <Spinner className="h-4 w-4" /> : <IconHeart filled={hydrated && wishHas} />}
         </button>
       </Link>
 

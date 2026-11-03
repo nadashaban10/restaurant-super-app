@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { identity } from "@/lib/identity";
+import { IconPhone } from "@/components/ui/icons";
+import { identity, phones } from "@/lib/identity";
 import type { AppLocale } from "@/i18n/routing";
 
 export async function Hero({ locale }: { locale: AppLocale }) {
@@ -59,23 +60,16 @@ export async function Hero({ locale }: { locale: AppLocale }) {
             {headline}
           </h1>
 
-          <div
-            className="ks-fade-in flex w-full max-w-md items-center gap-2.5 sm:gap-3"
+          <p
+            className="ks-fade-in inline-flex items-baseline gap-2 border-b border-white/35 pb-1"
             lang={locale}
             dir={dir}
-            aria-label={t("home.since", { year: yearLabel })}
           >
-            <span className="h-px w-7 shrink-0 bg-[var(--brand-red)] sm:w-10" aria-hidden />
-            <span className="flex items-baseline gap-2 whitespace-nowrap">
-              <span className="text-[11px] font-bold text-white/80 sm:text-sm">
-                {t("home.sinceLabel")}
-              </span>
-              <span className="text-xl font-black tabular-nums leading-none text-white sm:text-3xl">
-                {yearLabel}
-              </span>
+            <span className="text-sm font-bold text-white/80">{t("home.sinceLabel")}</span>
+            <span className="text-2xl font-black tabular-nums leading-none text-white sm:text-3xl">
+              {yearLabel}
             </span>
-            <span className="h-px min-w-6 flex-1 bg-white/30" aria-hidden />
-          </div>
+          </p>
 
           <p className="ks-fade-in text-sm leading-relaxed text-white/90 sm:text-base md:text-lg">
             {t("home.location")}
@@ -92,12 +86,13 @@ export async function Hero({ locale }: { locale: AppLocale }) {
             >
               {t("cta.orderNow")}
             </Link>
-            <Link
-              href="/menu"
-              className="ks-pressable inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-white/30 bg-white/95 px-6 text-sm font-bold text-[var(--brand-black)] backdrop-blur transition hover:bg-white sm:w-auto sm:px-7 sm:text-base"
+            <a
+              href={`tel:${phones.primary.e164}`}
+              className="ks-pressable inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/40 bg-transparent px-6 text-sm font-bold text-white transition hover:bg-white/10 sm:w-auto sm:px-7 sm:text-base"
             >
-              {t("cta.viewMenu")}
-            </Link>
+              <IconPhone className="h-4 w-4" />
+              {t("cta.callUs")}
+            </a>
           </div>
         </div>
       </div>

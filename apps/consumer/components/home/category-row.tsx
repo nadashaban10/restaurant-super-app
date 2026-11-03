@@ -7,38 +7,44 @@ export function CategoryRow({
   categories,
   locale,
   activeId,
+  allLabel,
 }: {
   categories: Category[];
   locale: AppLocale;
   activeId?: string;
+  allLabel: string;
 }) {
+  const chip =
+    "inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 text-sm font-semibold transition";
+
   return (
-    <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2" role="list">
-      <Link
-        href="/menu"
-        role="listitem"
-        className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-semibold leading-[44px] transition ${
-          !activeId
-            ? "border-[var(--brand-red)] bg-[var(--brand-red)] text-white shadow-sm"
-            : "border-[var(--border)] bg-white text-[var(--brand-black)] hover:border-[var(--brand-red)]/40"
-        }`}
-      >
-        {locale === "ar" ? "الكل" : "All"}
-      </Link>
-      {categories.map((category) => (
+    <ul className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2">
+      <li>
         <Link
-          key={category.id}
-          href={`/menu?category=${category.slug}`}
-          role="listitem"
-          className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-semibold leading-[44px] transition ${
-            activeId === category.id
+          href="/menu"
+          className={`${chip} ${
+            !activeId
               ? "border-[var(--brand-red)] bg-[var(--brand-red)] text-white shadow-sm"
               : "border-[var(--border)] bg-white text-[var(--brand-black)] hover:border-[var(--brand-red)]/40"
           }`}
         >
-          {localizedText(category.name, locale)}
+          {allLabel}
         </Link>
+      </li>
+      {categories.map((category) => (
+        <li key={category.id}>
+          <Link
+            href={`/menu?category=${category.slug}`}
+            className={`${chip} ${
+              activeId === category.id
+                ? "border-[var(--brand-red)] bg-[var(--brand-red)] text-white shadow-sm"
+                : "border-[var(--border)] bg-white text-[var(--brand-black)] hover:border-[var(--brand-red)]/40"
+            }`}
+          >
+            {localizedText(category.name, locale)}
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

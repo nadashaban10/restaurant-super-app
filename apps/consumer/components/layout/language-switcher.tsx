@@ -1,15 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
+import { Spinner } from "@/components/ui/spinner";
 
 export function LanguageSwitcher() {
   const locale = useLocale() as AppLocale;
   const router = useRouter();
   const pathname = usePathname();
+  const [pending, setPending] = useState<AppLocale | null>(null);
 
   function switchTo(next: AppLocale) {
+    if (next === locale || pending) return;
+    setPending(next);
     router.replace(pathname, { locale: next });
   }
 
@@ -28,8 +33,9 @@ export function LanguageSwitcher() {
             : "text-[var(--muted)] hover:text-[var(--brand-black)]"
         }`}
         aria-pressed={locale === "ar"}
+        disabled={pending !== null}
       >
-        عربي
+        {pending === "ar" ? <Spinner className="mx-auto h-4 w-4" /> : "عربي"}
       </button>
       <button
         type="button"
@@ -40,8 +46,9 @@ export function LanguageSwitcher() {
             : "text-[var(--muted)] hover:text-[var(--brand-black)]"
         }`}
         aria-pressed={locale === "en"}
+        disabled={pending !== null}
       >
-        EN
+        {pending === "en" ? <Spinner className="mx-auto h-4 w-4" /> : "EN"}
       </button>
     </div>
   );

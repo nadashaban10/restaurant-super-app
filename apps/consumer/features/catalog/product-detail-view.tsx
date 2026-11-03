@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { ProductImage } from "@/components/product/product-image";
 import { useCartStore } from "@/stores/cart-store";
+import { useSuggestionStore } from "@/stores/suggestion-store";
 import { useWishlistStore } from "@/stores/wishlist-store";
 import { useToastStore } from "@/stores/toast-store";
 import type { Product } from "@/lib/catalog/schema";
@@ -18,6 +19,7 @@ import type { AppLocale } from "@/i18n/routing";
 import { Spinner } from "@/components/ui/spinner";
 import { IconHeart } from "@/components/ui/icons";
 import { briefActionDelay } from "@/lib/ui";
+import { AddonGroupRows } from "@/features/recommendations/meal-suggestions";
 
 export function ProductDetailView({ product }: { product: Product }) {
   const t = useTranslations();
@@ -27,9 +29,11 @@ export function ProductDetailView({ product }: { product: Product }) {
   const [variantId, setVariantId] = useState(defaultVariant.id);
   const [qty, setQty] = useState(1);
   const [busy, setBusy] = useState(false);
+  const [wishBusy, setWishBusy] = useState(false);
   const variant = product.variants.find((v) => v.id === variantId) ?? defaultVariant;
   const price = useMemo(() => priceVariant(product, variant), [product, variant]);
   const addItem = useCartStore((s) => s.addItem);
+  const suggest = useSuggestionStore((s) => s.suggest);
   const toggleWish = useWishlistStore((s) => s.toggle);
   const wished = useWishlistStore((s) => s.productIds.includes(product.id));
   const showToast = useToastStore((s) => s.show);
@@ -44,6 +48,7 @@ export function ProductDetailView({ product }: { product: Product }) {
     try {
       await briefActionDelay();
       addItem(product.id, variant.id, qty);
+      suggest(product.id);
       showToast(t("toast.added"), "success");
     } finally {
       setBusy(false);
@@ -51,28 +56,37 @@ export function ProductDetailView({ product }: { product: Product }) {
   }
 
   return (
-    <article className="mx-auto grid max-w-6xl gap-8 px-4 py-8 md:grid-cols-2 md:gap-12 md:py-12">
-      <div className="overflow-hidden rounded-[var(--radius-xl)] border border-[var(--border)] bg-white shadow-[var(--shadow-sm)]">
+    <article className="mx-auto grid w-full min-w-0 max-w-6xl gap-6 px-4 py-6 md:grid-cols-2 md:items-start md:gap-12 md:py-12">
+      <div className="mx-auto w-full min-w-0 max-w-md overflow-hidden rounded-[var(--radius-xl)] border border-[var(--border)] bg-white shadow-[var(--shadow-sm)] md:max-w-none">
         <ProductImage
           src={product.images[0]?.src}
           alt={product.title}
-          sizes="(max-width: 768px) 100vw, 50vw"
+          sizes="(max-width: 768px) 100vw, 480px"
           priority
+          className="h-48 sm:h-60 md:aspect-[4/3] md:h-auto md:max-h-[28rem]"
         />
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex min-w-0 flex-col gap-5">
         <div className="flex items-start justify-between gap-3">
           <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">
             {localizedText(product.title, locale)}
           </h1>
           <button
             type="button"
-            onClick={() => toggleWish(product.id)}
+            disabled={wishBusy}
+            onClick={() => {
+              if (wishBusy) return;
+              setWishBusy(true);
+              void briefActionDelay(180).finally(() => {
+                toggleWish(product.id);
+                setWishBusy(false);
+              });
+            }}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--border)] bg-white text-[var(--brand-red)] shadow-sm transition hover:bg-[var(--brand-red-soft)]"
             aria-pressed={wished}
             aria-label={wished ? t("wishlist.remove") : t("wishlist.add")}
           >
-            <IconHeart filled={wished} />
+            {wishBusy ? <Spinner className="h-4 w-4" /> : <IconHeart filled={wished} />}
           </button>
         </div>
         {product.description[locale] || product.description.ar || product.description.en ? (
@@ -152,6 +166,9 @@ export function ProductDetailView({ product }: { product: Product }) {
             t("cta.addToOrder")
           )}
         </button>
+      </div>
+      <div className="min-w-0 pb-20 md:col-span-2 md:pb-0">
+        <AddonGroupRows productIds={[product.id]} title={t("suggest.perfect")} />
       </div>
     </article>
   );

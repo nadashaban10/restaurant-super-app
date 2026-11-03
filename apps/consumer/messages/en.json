@@ -8,6 +8,9 @@
     "closeMenu": "Close menu",
     "skipToContent": "Skip to content"
   },
+  "status": {
+    "loading": "Loading"
+  },
   "cta": {
     "orderNow": "Order now",
     "viewMenu": "View menu",
@@ -18,6 +21,10 @@
     "moreSizes": "More sizes",
     "chooseOptions": "Choose options",
     "seeAll": "See all"
+  },
+  "menu": {
+    "all": "All",
+    "empty": "No dishes in this section."
   },
   "home": {
     "featured": "Popular dishes",
@@ -55,13 +62,57 @@
     "title": "Cart",
     "empty": "Your cart is empty.",
     "emptyCta": "Browse the menu",
-    "subtotal": "Subtotal",
-    "delivery": "Delivery",
+    "subtotal": "Items subtotal",
+    "delivery": "Delivery fee",
+    "deliveryNote": "To be agreed with the restaurant",
     "summary": "Order summary",
     "total": "Total",
     "remove": "Remove",
     "calculating": "Calculating total…",
-    "staticNote": "Prices come from the approved menu. Checkout will be enabled after the API is connected."
+    "continue": "Continue shopping",
+    "checkout": "Checkout",
+    "unavailable": "Some items are no longer available. Remove them before checkout.",
+    "unavailableItem": "This item is no longer available",
+    "staticNote": "Please send a WhatsApp message to confirm your order."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "intro": "Enter your delivery details, then send the order on WhatsApp. We confirm it with you there.",
+    "customer": "Delivery details",
+    "requiredHint": "Fields marked with * are required.",
+    "optional": "Optional",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Mohamed Shaaban",
+    "phone": "Phone number",
+    "phonePlaceholder": "010 1234 5678",
+    "email": "Email",
+    "emailPlaceholder": "name@email.com",
+    "district": "District / area",
+    "districtPlaceholder": "El Amerya",
+    "address": "Detailed address",
+    "addressPlaceholder": "Street, building, floor, and a nearby landmark",
+    "whatsapp": "WhatsApp number",
+    "whatsappHint": "Only if it is different from your phone number",
+    "whatsappPlaceholder": "010 1234 5678",
+    "notes": "Order notes",
+    "notesPlaceholder": "Example: no onions, please call when you arrive",
+    "backToCart": "Edit cart",
+    "confirm": "Confirm Order on WhatsApp",
+    "explain": "Please send a WhatsApp message to confirm your order.",
+    "pending": "Please send a WhatsApp message to confirm your order.",
+    "missingWhatsapp": "WhatsApp ordering is not set up yet. Please call the restaurant to place this order.",
+    "empty": "Your cart is empty. Add dishes before checkout.",
+    "emptyCta": "Browse the menu",
+    "fixErrors": "Please fix the highlighted fields.",
+    "errors": {
+      "fullName": "Enter your full name.",
+      "phone": "Enter a valid Egyptian mobile number, like 010 1234 5678.",
+      "email": "Enter a valid email address.",
+      "district": "Enter your district or area.",
+      "address": "Enter a detailed delivery address.",
+      "whatsapp": "Enter a valid Egyptian mobile number, or leave this blank.",
+      "notes": "Notes are too long. Please keep them under 500 characters."
+    }
   },
   "footer": {
     "tagline": "A history of the skewer",
@@ -76,6 +127,20 @@
     "tiktok": "TikTok",
     "whatsapp": "WhatsApp",
     "comingSoon": "Coming soon"
+  },
+  "suggest": {
+    "add": "Add",
+    "notNow": "Not now",
+    "withThis": "Goes nicely with it",
+    "complete": "Complete your meal",
+    "completeHint": "A few sides that go with what you picked.",
+    "perfect": "Perfect with this",
+    "extra": "Anything else?",
+    "extraHint": "Optional. Add a side if you like.",
+    "rice": "Rice",
+    "pasta": "Pasta",
+    "salads": "Salads",
+    "drinks": "Drinks"
   },
   "toast": {
     "added": "The product has been added to your cart successfully",

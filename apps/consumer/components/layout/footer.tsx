@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { getRestaurantWhatsAppNumber } from "@/lib/config";
 import { identity, phones } from "@/lib/identity";
 import {
   IconClock,
@@ -10,10 +11,6 @@ import {
   IconWhatsApp,
 } from "@/components/ui/icons";
 
-function whatsappHref(e164: string) {
-  return `https://wa.me/${e164.replace(/\D/g, "")}`;
-}
-
 type SocialLink = {
   key: "facebook" | "instagram" | "tiktok";
   href: string | null | undefined;
@@ -23,6 +20,7 @@ type SocialLink = {
 
 export async function Footer() {
   const t = await getTranslations("footer");
+  const whatsappNumber = getRestaurantWhatsAppNumber();
   const seo = identity.seo as {
     facebook?: string | null;
     instagram?: string | null;
@@ -83,19 +81,21 @@ export async function Footer() {
                 <span className="text-sm font-semibold">{phones.secondary.displayAr}</span>
               </a>
             </li>
-            <li>
-              <a
-                href={whatsappHref(phones.primary.e164)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-h-11 items-center gap-3 rounded-xl px-2 transition hover:bg-white/5"
-              >
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366]/20 text-[#25D366]">
-                  <IconWhatsApp />
-                </span>
-                <span className="text-sm font-semibold">{t("whatsapp")}</span>
-              </a>
-            </li>
+            {whatsappNumber ? (
+              <li>
+                <a
+                  href={`https://wa.me/${whatsappNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-h-11 items-center gap-3 rounded-xl px-2 transition hover:bg-white/5"
+                >
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366]/20 text-[#25D366]">
+                    <IconWhatsApp />
+                  </span>
+                  <span className="text-sm font-semibold">{t("whatsapp")}</span>
+                </a>
+              </li>
+            ) : null}
             <li>
               <a
                 href={`tel:${phones.complaints.e164}`}

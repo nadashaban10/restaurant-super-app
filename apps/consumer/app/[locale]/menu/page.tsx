@@ -67,9 +67,10 @@ export default async function MenuPage({
         categories={categories}
         locale={locale as AppLocale}
         activeId={active?.id}
+        allLabel={t("menu.all")}
       />
       {products.length === 0 ? (
-        <p className="mt-10 text-center text-[var(--muted)]">{t("cart.empty")}</p>
+        <p className="mt-10 text-center text-[var(--muted)]">{t("menu.empty")}</p>
       ) : (
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((product) => (

@@ -151,11 +151,35 @@ export function toCardPayload(product: Product) {
   };
 }
 
-/** Flat delivery fee in piastres (20 EGP). Quote math stays in one place. */
-export const DELIVERY_FEE_AMOUNT = 2000;
+export type CartQuoteLine = {
+  productId: string;
+  variantId: string;
+  slug: string;
+  title: { ar: string; en: string };
+  variantName: { ar: string; en: string };
+  isImplicit: boolean;
+  image: string | null;
+  quantity: number;
+  unitOriginalAmount: number;
+  unitFinalAmount: number;
+  lineOriginalAmount: number;
+  lineFinalAmount: number;
+  isAvailable: boolean;
+  status: Product["status"];
+};
 
-export function quoteCart(items: CartLineInput[]) {
-  const quoted = [];
+export type CartQuote = {
+  currency: "EGP";
+  items: CartQuoteLine[];
+  unavailableItemIds: string[];
+  subtotalOriginalAmount: number;
+  subtotalFinalAmount: number;
+  deliveryFeeAmount: number;
+  totalAmount: number;
+};
+
+export function quoteCart(items: CartLineInput[]): CartQuote {
+  const quoted: CartQuoteLine[] = [];
   const unavailableItemIds: string[] = [];
   let subtotalOriginalAmount = 0;
   let subtotalFinalAmount = 0;
@@ -170,6 +194,22 @@ export function quoteCart(items: CartLineInput[]) {
       !product.isAvailable
     ) {
       unavailableItemIds.push(`${line.productId}:${line.variantId}`);
+      quoted.push({
+        productId: line.productId,
+        variantId: line.variantId,
+        slug: product?.slug ?? "",
+        title: product?.title ?? { ar: "", en: "" },
+        variantName: variant?.name ?? { ar: "", en: "" },
+        isImplicit: variant?.isImplicit ?? true,
+        image: product?.images[0]?.src ?? null,
+        quantity: line.quantity,
+        unitOriginalAmount: 0,
+        unitFinalAmount: 0,
+        lineOriginalAmount: 0,
+        lineFinalAmount: 0,
+        isAvailable: false,
+        status: product?.status ?? "deleted",
+      });
       continue;
     }
     const unit = priceVariant(product, variant);
@@ -184,6 +224,7 @@ export function quoteCart(items: CartLineInput[]) {
       slug: product.slug,
       title: product.title,
       variantName: variant.name,
+      isImplicit: variant.isImplicit,
       image: product.images[0]?.src ?? null,
       quantity,
       unitOriginalAmount: unit.originalAmount,
@@ -195,16 +236,14 @@ export function quoteCart(items: CartLineInput[]) {
     });
   }
 
-  const deliveryFeeAmount = quoted.length > 0 ? DELIVERY_FEE_AMOUNT : 0;
-
   return {
-    currency: "EGP" as const,
+    currency: "EGP",
     items: quoted,
     unavailableItemIds,
     subtotalOriginalAmount,
     subtotalFinalAmount,
-    deliveryFeeAmount,
-    totalAmount: subtotalFinalAmount + deliveryFeeAmount,
+    deliveryFeeAmount: 0,
+    totalAmount: subtotalFinalAmount,
   };
 }
 

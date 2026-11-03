@@ -2,6 +2,7 @@
 
 import { QueryProvider } from "./query-provider";
 import { Toast } from "@/components/shared/toast";
+import { SuggestionHost } from "@/features/recommendations/suggestion-host";
 import type { ReactNode } from "react";
 
 export function AppProviders({ children }: { children: ReactNode }) {
@@ -9,6 +10,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
     <QueryProvider>
       {children}
       <Toast />
+      <SuggestionHost />
     </QueryProvider>
   );
 }

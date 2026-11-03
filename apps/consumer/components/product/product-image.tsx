@@ -20,9 +20,7 @@ export function ProductImage({ src, alt, sizes, priority = false, className }: P
   const isSvg = resolved.endsWith(".svg");
 
   return (
-    <div
-      className={`relative aspect-[4/3] overflow-hidden bg-[var(--page-bg)] ${className ?? ""}`}
-    >
+    <div className={`relative w-full overflow-hidden bg-[var(--page-bg)] ${className ?? "aspect-[4/3]"}`}>
       {isSvg ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={resolved} alt={label} className="h-full w-full object-cover" />
